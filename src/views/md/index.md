@@ -1,6 +1,6 @@
 # Functional Web App
 
-Functional Web Apps (FWA) are a different way to build dynamic web apps.
+Functional Web Apps (FWA) are a different way to build dynamic full-stack web apps.
 
 ## Key technologies
 
