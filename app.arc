@@ -13,3 +13,13 @@ fwa
   src src/default
 
 # cloud function for url shortener
+/to/:key
+  method any
+  src src/shortener
+ 
+# a dynamodb table for urls
+@tables
+data
+  scopeID *String
+  dataID **String
+  ttl TTL

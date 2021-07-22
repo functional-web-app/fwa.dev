@@ -3,7 +3,12 @@ module.exports = function styles (props) {
     body {
       margin: 10px auto;
       max-width: 666px;
-      font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
     }
+
+    details {
+      cursor: pointer;
+    }
+
   `.trim()
 }
