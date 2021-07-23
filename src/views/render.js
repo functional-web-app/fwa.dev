@@ -1,6 +1,8 @@
 let layout = require('./layout')
 let md = require('markdown-it')({ html: true })
 let notFound = require('../shared/errors/404')
+let fs = require('fs')
+
 let cache = {}
 
 /** render markdown for given path w layout */
