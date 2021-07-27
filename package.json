@@ -10,7 +10,7 @@
   "keywords": [],
   "author": "",
   "dependencies": {
-    "@architect/functions": "^3.14.1",
+    "@architect/functions": "RC",
     "@architect/sandbox": "^3.7.4"
   }
 }

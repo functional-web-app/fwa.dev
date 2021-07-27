@@ -1,6 +1,6 @@
 AWSTemplateFormatVersion: '2010-09-09'
 Transform: AWS::Serverless-2016-10-31
-Description: Exported by architect/package@6.2.1 on 2021-07-22T20:06:30.454Z
+Description: Exported by architect/package@6.2.1 on 2021-07-23T22:10:51.832Z
 Resources:
   HTTP:
     Type: AWS::Serverless::HttpApi
@@ -47,7 +47,7 @@ Resources:
     Type: AWS::Serverless::Function
     Properties:
       Handler: index.handler
-      CodeUri: s3://fwa-cfn-deployments-cebd1/fa8047ccbb71c5871f2428e2a1e5807b
+      CodeUri: s3://fwa-cfn-deployments-cebd1/c5c12ae45761740cb5bafa4fd3584817
       Runtime: nodejs12.x
       MemorySize: 1152
       Timeout: 5
@@ -81,7 +81,7 @@ Resources:
     Type: AWS::Serverless::Function
     Properties:
       Handler: index.handler
-      CodeUri: s3://fwa-cfn-deployments-cebd1/13d2ec712ae1de93a8b79e36648f6126
+      CodeUri: s3://fwa-cfn-deployments-cebd1/0a062f4b01744f8783ef935d2c44a5cd
       Runtime: nodejs12.x
       MemorySize: 1152
       Timeout: 5
