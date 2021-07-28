@@ -21,5 +21,5 @@ module.exports = function styles (props) {
       cursor: pointer;
     }
 
-  `.trim()
+  `.replace(/\s+/g, ' ').trim()
 }

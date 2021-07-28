@@ -27,7 +27,7 @@ Functional Web Apps (FWA) are a different way to build dynamic full-stack web ap
 
 ## Practices
 
-<li style=list-style:none;><input type=checkbox checked> Cloud functions centered development model
-<li style=list-style:none;><input type=checkbox checked> Modern low-latency autoscaling database
-<li style=list-style:none;><input type=checkbox checked> Progressive enhancement for behavior
-<li style=list-style:none;><input type=checkbox checked> Infra as Code for reliable deployment
+- Cloud functions centered development model
+- Modern low-latency autoscaling database
+- Progressive enhancement for behavior
+- Infra as Code for reliable deployment
