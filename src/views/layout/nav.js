@@ -1,4 +1,4 @@
-module.exports = function sidebar (props) {
+module.exports = function sidebar (/* props */) {
   return `
     <nav>
       <a href=/>Home</a>

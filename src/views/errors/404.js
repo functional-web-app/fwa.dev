@@ -3,7 +3,7 @@ module.exports = function notFound (path) {
     code: 404,
     html: `<!doctype html>
 <html>
-<body><h1>${ path } not found!</h1></body>
+<body><h1>${path} not found!</h1></body>
 </html>`
   }
 }

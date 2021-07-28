@@ -6,9 +6,9 @@ module.exports = function layout (props) {
 <html>
 <head>
   <meta name=viewport content=width=device-width,initial-scale=1>
-  <title>${ props.title || 'Functional Web App' }</title>
-  <style>${ styles(props) }</style>
+  <title>${props.title || 'Functional Web App'}</title>
+  <style>${styles(props)}</style>
 </head>
-<body>${ nav(props) }<main>${ props.body }</main></body>
+<body>${nav(props)}<main>${props.body}</main></body>
 </html>`
 }

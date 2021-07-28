@@ -1,19 +1,19 @@
 let layout = require('./layout')
 let md = require('markdown-it')({ html: true })
-let notFound = require('../shared/errors/404')
+let notFound = require('../views/errors/404')
 let fs = require('fs')
 
 let cache = {}
 
 /** render markdown for given path w layout */
-module.exports = function render (pathToFile) { 
+module.exports = function render (pathToFile) {
 
   // cache html between invocations
   if (!cache[pathToFile]) {
 
     // early return if not found
     if (fs.existsSync(pathToFile) === false) {
-      return notFound(pathToFile) 
+      return notFound(pathToFile)
     }
 
     // otherwise warm the cache

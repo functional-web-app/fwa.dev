@@ -1,4 +1,4 @@
-let fail = require('@architect/shared/errors/500')
+let fail = require('@architect/views/errors/500')
 let render = require('@architect/views/render')
 let path = require('path')
 

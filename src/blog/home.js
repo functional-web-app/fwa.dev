@@ -1,5 +1,5 @@
 let list = require('@architect/views/blog/list')
-let fail = require('@architect/shared/errors/500')
+let fail = require('@architect/views/errors/500')
 let fs = require('fs')
 let path = require('path')
 
@@ -8,9 +8,9 @@ module.exports = async function home (request) {
   try {
     if (request.params.proxy === '') {
       let base = path.join(__dirname, 'node_modules', '@architect', 'views', 'md')
-      let pathToPosts = path.join(base, 'blog') 
+      let pathToPosts = path.join(base, 'blog')
       let posts = fs.readdirSync(pathToPosts)
-      return list(posts) 
+      return list(posts)
     }
   }
   catch (e) {

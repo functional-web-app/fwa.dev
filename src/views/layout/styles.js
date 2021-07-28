@@ -1,4 +1,4 @@
-module.exports = function styles (props) {
+module.exports = function styles (/* props */) {
   return `
     body {
       margin: 10px auto;

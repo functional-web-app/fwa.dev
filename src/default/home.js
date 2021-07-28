@@ -1,4 +1,4 @@
-let fail = require('@architect/shared/errors/500')
+let fail = require('@architect/views/errors/500')
 let render = require('@architect/views/render')
 let path = require('path')
 
@@ -10,7 +10,7 @@ module.exports = async function handle (request) {
     let pathToFile = request.path === '/'
       ? path.join(base, 'index.md')
       : path.join(base, `${request.path.replace('/', '')}.md`)
-   
+
     return render(pathToFile)
   }
   catch (e) {
