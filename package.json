@@ -2,13 +2,31 @@
   "name": "fwa.dev",
   "version": "1.0.0",
   "description": "Source for fwa.dev",
-  "main": "index.js",
+  "keywords": [
+    "functional",
+    "web",
+    "app",
+    "dynamic",
+    "serverless"
+  ],
+  "author": "Brian LeRoux <b@brian.io>",
   "scripts": {
     "start": "sandbox",
     "lint": "eslint src --fix"
   },
-  "keywords": ["functional", "web", "app", "dynamic", "serverless"],
-  "author": "Brian LeRoux <b@brian.io>",
+  "architect": {
+    "app": "fwa",
+    "http": {
+      "/blog/*": {
+        "src": "src/blog",
+        "method": "any"
+      },
+      "/*": {
+        "src": "src/default",
+        "method": "any"
+      }
+    }
+  },
   "dependencies": {
     "@architect/eslint-config": "^1.0.0",
     "@architect/functions": "RC",
