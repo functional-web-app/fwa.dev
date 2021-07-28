@@ -12,7 +12,7 @@
   "author": "Brian LeRoux <b@brian.io>",
   "scripts": {
     "start": "sandbox",
-    "lint": "eslint src --fix"
+    "lint": "arc-hydrate && eslint src --fix"
   },
   "architect": {
     "app": "fwa",
@@ -30,6 +30,7 @@
   "dependencies": {
     "@architect/eslint-config": "^1.0.0",
     "@architect/functions": "RC",
+    "@architect/hydrate": "^1.10.2",
     "@architect/sandbox": "^3.7.4",
     "eslint": "^7.31.0"
   },
