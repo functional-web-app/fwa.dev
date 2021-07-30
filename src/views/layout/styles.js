@@ -16,6 +16,11 @@ module.exports = function styles (/* props */) {
       padding: 0 10px;
       list-style-type: "✔";
     }
+    li.anti-pattern {
+      margin: 0 12px;
+      padding: 0 8px;
+      list-style-type: "ⓧ";
+    }
 
     details {
       cursor: pointer;
