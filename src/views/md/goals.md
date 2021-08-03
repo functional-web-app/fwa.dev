@@ -1,29 +1,31 @@
 # Goals
 
-- Accessible and inclusive.
-- Author and maintain only unique business logic as discreet single-responsbility cloud functions; code is a liability!
-- Full-stack: persistence, eventing and backend affordances are built-in first-class.
-- Minimal code and infra dependencies: all explicity declared.
-- Replacability: functions should referentially transparent, easy to replace and remove
-- All cloud infra is auto-scaling managed services with generous free tier.
+- Accessible and inclusive by default.
+- Author and maintain only unique business logic.
+- Replacability: functions should referentially transparent, easy to replace and remove.
+- Minimize code _and_ infra dependencies while ensuring both are explicity declared.
+- Full-stack persistence, eventing and other backend affordances are built-in first-class.
 
 # Non-goals
 
 <ul>
   <li class=anti-pattern> Cloud vendor portability</li>
-  <li class=anti-pattern> Server metaphor familiarity</li>
-  <li class=anti-pattern> Single tenant system interop</li>
+  <li class=anti-pattern> Legacy systems familiarity</li>
 </ul>
 
 # Trade-offs
 
 <details>
-  <summary>Total control</summary> 
-  <p>Having a preference for managed services means abdicating some level of control to the upstream vendor. This is perhaps the most important dependency for the Functional Web App so <a href=/examples>choose your primary cloud vendor with care and intention</a>.</p>
+  <summary>Portability</summary> 
+  <p>Having a preference for managed services means abdicating some level of control to the upstream vendor. Cloud functions are very early technology and as such are very vendor specific; but cloud functions do have at least one defacto and stable leader today. This is perhaps the most important dependency for the Functional Web App so <a href=/examples>choose your primary cloud vendor with care and intention</a>.</p>
+</details>
+<details>
+  <summary>Familiarity</summary> 
+  <p>This is a different way to approach building dynamic web apps. Functional Web Apps eschew traditional architectural metaphors but most notably the concept of a 'server'. This will feel a little weird. But only because having a server is familiar: not because it is a necessary abstraction for modelling your unique business logic.</p>
 </details>
 <details>
   <summary>Coldstart</summary> 
-  <p>By moving an entire architecture to stateless cloud functions will require more diligence and discipline to avoid coldstarts. Cloud functions are usually a stateless trusted runtime execution environment that is fresh every invocation. Most allow some form of warm caching and pre-provisioning capacity. Coldstart is directly corelated to function payload size. The larger the function the longer it will take to boot up cold. The rule of thumb is to keep function payloads under 5mb to coldstart sub-second. In practice divvying up an application into single-responsbility discreet functions this upper bound is a generous amount of room. If 1mb is 500 pages of text then this means you have rougly 2500 pages of text to work with!</p>
+  <p>Coldstart is directly corelated to function payload size. The larger the function the longer it will take to boot up cold. The rule of thumb is to keep function payloads under 5mb to coldstart sub-second. In practice divvying up an application into single-responsbility discreet functions this upper bound is a generous amount of room. If 1mb is 500 pages of text then this means you have rougly 2500 pages of text to work with _per cloud function_!</p>
 </details>
 
 # Code smells
