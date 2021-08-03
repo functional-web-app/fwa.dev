@@ -1,10 +1,9 @@
 # Goals
 
 - Accessible and inclusive by default.
-- Author and maintain only unique business logic.
-- Replacability: functions should referentially transparent, easy to replace and remove.
-- Minimize code _and_ infra dependencies while ensuring both are explicity declared.
 - Full-stack persistence, eventing and other backend affordances are built-in first-class.
+- Author and maintain only unique business logic.
+- Minimize code _and_ infra dependencies while ensuring both are explicity declared.
 
 # Non-goals
 
@@ -21,7 +20,7 @@
 </details>
 <details>
   <summary>Familiarity</summary> 
-  <p>This is a different way to approach building dynamic web apps. Functional Web Apps eschew traditional architectural metaphors but most notably the concept of a 'server'. This will feel a little weird. But only because having a server is familiar: not because it is a necessary abstraction for modelling your unique business logic.</p>
+  <p>This is a different way to approach building dynamic web apps. Functional Web Apps eschew traditional architectural metaphors but most notably the concept of a 'server'. This will feel a little weird. But only because having a server is familiar not because it is a necessary abstraction for modelling unique business logic. The second big delta is using a managed database will be different from using a traditional single tenant database which can have network reuse issues.</p>
 </details>
 <details>
   <summary>Coldstart</summary> 
