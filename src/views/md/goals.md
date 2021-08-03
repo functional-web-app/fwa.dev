@@ -20,7 +20,7 @@
 </details>
 <details>
   <summary>Familiarity</summary> 
-  <p>This is a different way to approach building dynamic web apps. Functional Web Apps eschew traditional architectural metaphors but most notably the concept of a 'server'. This will feel a little weird. But only because having a server is familiar not because it is a necessary abstraction for modelling unique business logic. The second big delta is using a managed database will be different from using a traditional single tenant database which can have network reuse issues.</p>
+  <p>This is a different way to approach building dynamic web apps. Functional Web Apps eschew traditional architectural metaphors but most notably the concept of a 'server' and 'database server'. This will feel a little weird. But only because having a server is familiar not because it is a necessary abstraction for modelling unique business logic. Traditional database systems cannot cope with the autoscaling nature of cloud functions which leads to issues managing connections. Managed database scale up to meet demand without these challenges.</p>
 </details>
 <details>
   <summary>Coldstart</summary> 
