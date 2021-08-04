@@ -1,8 +1,8 @@
 # Goals
 
 - Accessible and inclusive by default.
-- Full-stack persistence, eventing and other backend affordances are built-in first-class.
-- Author and maintain only unique business logic.
+- Author and maintain only unique business logic as pure cloud functions.
+- Full-stack persistence, eventing and other backend affordances are built-in first-class autoscaling managed services.
 - Minimize code _and_ infra dependencies while ensuring both are explicity declared.
 
 # Non-goals
