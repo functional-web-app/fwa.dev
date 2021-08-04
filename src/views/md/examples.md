@@ -12,6 +12,7 @@
 - [Begin](https://begin.com)
 - [Deno Deploy](https://deno.com/deploy)
 - [Fastly](https://fastly.com)
+- [GCP](https://cloud.google.com/functions)
 - [Cloudflare](https://www.cloudflare.com)
 - [FaunaDB](https://fauna.com)
 - [PlanetscaleDB](https://www.planetscale.com)
