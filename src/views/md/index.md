@@ -20,6 +20,6 @@ Functional Web Apps (FWA) are a different way to build dynamic full-stack web ap
   <p>Functional Web Apps are a cloud function-centered development model freeing web devs to focus on unique business logic as pure single-responsibility functions with no infra to scale or patch. Spanning the full-stack, an entire application modeled as cloud functions – each with a singular purpose. Functions can utilize any programming language, and a Functional Web App can even leverage different runtimes in the same app for their respective strengths. Single-responsibility functions are interchangeable, replaceable, easily added or removed, and test; they coldstart faster and offer more granularity for least-privilege security.</p>
 </details>
 <details>
-  <summary>Reliable<summary>
+  <summary>Reliable</summary>
   <p>Functional Web Apps deploy quickly, consistently, and reliably. Cloud infra is an explicitly defined dependency that lives in version control beside the code that depends on it.</p>
 </details>
