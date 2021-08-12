@@ -6,7 +6,7 @@ FWA architecture empowers front-end developers to write apps without worrying ab
 
 ## Benefits
 
-- Focus on pure business logic without complexity introduced by infra concerns and vendor boilerplate.
-- Build with everything you need in one place without tying together third-party tools. Functional Web Apps are full-stack inclusive of cloud infra such as databases, queues, events, cron, etc.
-- Functions are a trusted backend process: isolated, discreet, reliable and deterministic; declarative deployment provides safe and predictable delivery.
 - HTML-first progressively enhanced content delivery ensures the most inclusive and accessible web consumer experience. 
+- Functions are a trusted backend process: isolated, discreet, reliable and deterministic; declarative deployment provides safe and predictable delivery.
+- Build with everything you need in one place without tying together third-party tools. Functional Web Apps are full-stack inclusive of cloud infra such as databases, queues, events, cron, etc.
+- Focus on pure business logic without complexity introduced by infra concerns and vendor boilerplate.
