@@ -15,24 +15,18 @@ module.exports = function styles (/* props */) {
       border-left: 10px solid lightgrey;
       padding-left: 10px;
     }
+    nav a {
+      margin-right: 10px;
+    }
 
-    ul {
-      padding: 0;
+    ol {
+      padding: 0 10px;
     }
 
     li {
-      margin: 0 10px;
+      margin: 0;
       padding: 0 10px;
       list-style-type: "✔";
-    }
-    li.anti-pattern {
-      margin: 0 12px;
-      padding: 0 8px;
-      list-style-type: "ⓧ";
-    }
-
-    details {
-      cursor: pointer;
     }
 
   `.replace(/\s+/g, ' ').trim()

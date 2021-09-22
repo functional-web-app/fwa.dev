@@ -8,7 +8,7 @@ These approaches come with tradeoffs. Load balancing fleets of web servers is ch
 
 The Functional Web App is a different way to build dynamic full-stack web applications and APIs without these tradeoffs.
 
-The three facets of the Functional Web App
+## The three facets of the Functional Web App
 
 1. Backend business logic is executed by single-responsibility <a href=/cloud-functions>cloud functions</a>
 2. Persistence is maintained with a <a href=/managed-database>managed database</a>
