@@ -8,6 +8,14 @@ module.exports = function styles (/* props */) {
       line-height: 1.6;
     }
 
+    blockquote {
+      margin: 0;
+      background: #eaeaea;
+      font-style: italic;
+      border-left: 10px solid lightgrey;
+      padding-left: 10px;
+    }
+
     ul {
       padding: 0;
     }
