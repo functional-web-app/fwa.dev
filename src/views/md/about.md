@@ -1,3 +1,7 @@
+# About
+
+TKTK
+
 # Goals
 
 - Accessible and inclusive by default.
