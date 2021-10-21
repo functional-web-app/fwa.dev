@@ -26,7 +26,10 @@ module.exports = function styles (/* props */) {
     li {
       margin: 0;
       padding: 0 10px;
-      list-style-type: "✔";
+    }
+
+    h4 {
+      font-weight: 600;
     }
 
   `.replace(/\s+/g, ' ').trim()

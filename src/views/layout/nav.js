@@ -8,4 +8,3 @@ module.exports = function sidebar (/* props */) {
     </nav>
   `
 }
-
