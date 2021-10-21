@@ -1,43 +1,32 @@
 {
   "name": "fwa.dev",
   "version": "1.1.0",
-  "description": "Source for fwa.dev",
-  "keywords": [
-    "functional",
-    "web",
-    "app",
-    "dynamic",
-    "serverless"
-  ],
-  "author": "Brian LeRoux <b@brian.io>",
+  "description": "The Functional Web App (fwa.dev)",
   "scripts": {
     "start": "sandbox",
-    "lint": "arc-hydrate && eslint src --fix"
-  },
-  "architect": {
-    "app": "fwa",
-    "http": {
-      "/blog/*": {
-        "src": "src/blog",
-        "method": "any"
-      },
-      "/*": {
-        "src": "src/default",
-        "method": "any"
-      }
-    }
+    "lint": "arc-hydrate && eslint . --fix"
   },
   "dependencies": {
     "@architect/eslint-config": "^1.0.0",
-    "@architect/functions": "RC",
-    "@architect/hydrate": "^1.10.2",
-    "@architect/sandbox": "^3.7.4",
-    "eslint": "^7.31.0"
+    "@architect/functions": "^4.0.0",
+    "@architect/hydrate": "^2.0.4",
+    "@architect/sandbox": "^4.2.1",
+    "eslint": "^8.0.1",
+    "markdown-it": "^12.2.0"
   },
   "eslintConfig": {
     "extends": "@architect/eslint-config",
     "rules": {
       "require-await": "off"
     }
-  }
+  },
+  "keywords": [
+    "FWA",
+    "functional web app",
+    "functional",
+    "web",
+    "app",
+    "dynamic",
+    "serverless"
+  ]
 }
