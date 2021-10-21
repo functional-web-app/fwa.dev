@@ -14,12 +14,19 @@ module.exports = function render ({ pathToFile, path }) {
 
     // early return if not found
     if (fs.existsSync(pathToFile) === false) {
-      return notFound(pathToFile)
+      let html = layout({
+        body: notFound(path),
+        title: '404 / not found',
+      })
+      return { status: 404, html }
     }
 
     // otherwise warm the cache
     let raw = fs.readFileSync(pathToFile).toString()
-    cache[pathToFile] = layout({ body: md.render(raw), path })
+    cache[pathToFile] = layout({
+      body: md.render(raw),
+      path,
+    })
   }
 
   // respond w the cached html

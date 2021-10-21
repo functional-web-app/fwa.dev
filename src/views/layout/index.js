@@ -1,9 +1,11 @@
 let styles = require('./styles')
 
 module.exports = function layout (props) {
-  let { title, body, path } = props
-  let file = path === '/' ? 'index' : path.replace('/', '')
-  let link = `https://github.com/functional-web-app/fwa.dev/blob/main/src/views/md/${file}.md`
+  let { title, body, path = '' } = props
+  let file = path === '/'
+    ? 'index'
+    : path.replace('/', '')
+  let editLink = path ? `<a href="https://github.com/functional-web-app/fwa.dev/blob/main/src/views/md/${file}.md">Edit or translate this page</a>` : ''
   return `<!doctype html>
 <html>
 <head>
@@ -16,7 +18,7 @@ module.exports = function layout (props) {
     ${body}
   </main>
   <footer>
-    <a href="${link}">Edit or translate this page</a>
+    ${editLink}
   </footer>
 </body>
 </html>`
