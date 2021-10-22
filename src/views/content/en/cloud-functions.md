@@ -44,7 +44,7 @@ This means cloud functions are [referentially transparent](https://en.wikipedia.
 The physical architecture of FWAs is also perfectly symmetrical with its logical architecture. Each deployed cloud function is represented identically in the codebase. This results in a more straightforward debugging and maintenance developer experience, wherein errors are traced to specific known cloud functions, each with its own isolated logs.
 
 
-## Accessible
+### Accessible
 
 Client-side JavaScript occasionally fails, which is why progressive enhancement is ultimately the most resilient rendering technique for all web consumers. Cloud functions render HTML-first and progressively enhance, ensuring dynamic content is immediately available and interactive to web consumers.
 
