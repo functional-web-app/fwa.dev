@@ -1,7 +1,11 @@
 let styles = require('./styles')
+let fwa = 'The Functional Web App'
 
 module.exports = function layout (props) {
-  let { title, body, path = '' } = props
+  let { title = '', description, body, path = '' } = props
+  title = title ? `${title} | ${fwa}` : fwa
+  description = description ? `<meta description="${description}">` : ''
+
   let file = path === '/'
     ? 'index'
     : path.replace('/', '')
@@ -9,8 +13,9 @@ module.exports = function layout (props) {
   return `<!doctype html>
 <html>
 <head>
+  <title>${title}</title>
+  ${description}
   <meta name=viewport content=width=device-width,initial-scale=1>
-  <title>${title || 'The Functional Web App'}</title>
   <style>${styles(props)}</style>
 </head>
 <body>

@@ -1,6 +1,9 @@
 let layout = require('./layout')
 let footnote = require('markdown-it-footnote')
-let md = require('markdown-it')().use(footnote)
+let meta = require('markdown-it-meta')
+let md = require('markdown-it')()
+  .use(footnote)
+  .use(meta)
 let notFound = require('../views/errors/404')
 let fs = require('fs')
 
@@ -23,9 +26,11 @@ module.exports = function render ({ pathToFile, path }) {
 
     // otherwise warm the cache
     let raw = fs.readFileSync(pathToFile).toString()
+    let body = md.render(raw)
     cache[pathToFile] = layout({
-      body: md.render(raw),
+      body,
       path,
+      ...md.meta,
     })
   }
 

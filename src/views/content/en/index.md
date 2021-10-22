@@ -1,3 +1,7 @@
+---
+title: The Functional Web App (FWA)
+description: An architectural pattern for building dynamic, full-stack web applications and APIs
+---
 # The Functional Web App
 
 > An architectural pattern for building dynamic, full-stack web applications and APIs
@@ -17,7 +21,7 @@ The tradeoffs of these two approaches are well-known. Load-balanced server fleet
 ### 2. [Managed database](/managed-database)
 #### Persistence is securely maintained with a [fully-managed database](/managed-database)
 
-### 3. [Deterministic deployments](/deterministic-deployment)
+### 3. [Deterministic deployment](/deterministic-deployment)
 #### Infrastructure dependencies are explicitly defined and [deterministically deployed](/deterministic-deployment)
 
 
