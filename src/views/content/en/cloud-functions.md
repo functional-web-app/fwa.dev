@@ -14,9 +14,9 @@ Each time a Functional Web App's page or endpoint is requested, or background ta
 
 ### Stateless
 
-Functional Web App operations execute in discrete cloud function processes. Each cloud function process spins up in milliseconds, runs to completion, and spins down, providing a fully stateless execution environment.
+Functional Web App operations execute in discrete cloud function processes, each containing its own limited set of dependencies. Each cloud function process spins up in milliseconds, runs to completion, and spins down, providing a fully stateless execution environment.
 
-Each process executes in a secure sandbox totally isolated from noisy (and nosy) concurrent neighbor processes. Because of their size, statelessness, and isolation, cloud functions have inherently high concurrency, enabling FWAs to achieve the horizontal scalability necessary to meet any level of demand.
+Each process executes in a secure sandbox totally isolated from noisy (and nosy) concurrent neighbor processes. Because of their size, statelessness, and isolation, cloud functions have inherently high concurrency, enabling FWAs to achieve the horizontal scalability necessary to meet any level of demand without developer intervention.
 
 Traditional dynamic applications rely on long-lived stateful processes that require significant consideration to scale vertically and horizontally; such applications run on servers that take minutes or hours to spin up. In contrast, FWAs both scale transparently and are not affected by classes of bugs that affect long-lived processes, like slow memory leaks.
 
