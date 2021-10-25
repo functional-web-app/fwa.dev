@@ -51,5 +51,5 @@ Client-side JavaScript occasionally fails, which is why progressive enhancement 
 The Functional Web App delivers the fastest-possible contentful "paint", enabling instantly functional forms and links without layout shifts or waiting for clientside JS to load and render an interface. This approach brings first-input-delay close to zero, while creating a better experience for web consumers with accessibility needs.
 
 
-[^1]: A trusted compute process is an execution environment that you fully control and own. For example: an environment in which a secret key can reside. By this measure, a server or cloud function execute your business logic in a trusted compute process, but a user's web browser do not execute your business logic is a trusted compute process.
+[^1]: A trusted compute process is an execution environment that you fully control and own. For example: an environment in which a secret key can reside. By this measure, a server or cloud function executes your business logic in a trusted compute process, but a user's web browser does not execute your business logic in a trusted compute process.
 [^2]: Today there exists numerous cloud function vendors; currently FWAs most often rely on AWS Lambda
