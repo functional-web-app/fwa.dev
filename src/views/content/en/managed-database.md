@@ -20,6 +20,6 @@ Functional Web Apps should be able to rely on their persistence layer to automat
 
 ### Scalability
 
-A managed database provider is responsible of provisioning, monitoring, security patching, and running regular backups. Functional Web Apps expect managed databases transparently auto-scale, meaning application code does not require special logic for sharding concerns.
+A managed database provider is responsible of provisioning, monitoring, security patching, and running regular backups. Functional Web Apps expect managed databases to transparently auto-scale, meaning application code does not require special logic for sharding concerns.
 
 Database performance is always crucial, so a FWA's primary managed database should meet any level of demand, no matter how much data is stored, or how many clients are trying to access it, while retaining low-latency performance.
