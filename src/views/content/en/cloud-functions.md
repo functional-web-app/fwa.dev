@@ -2,7 +2,6 @@
 title: Cloud functions
 description: Functional Web Apps are primarily composed of cloud functions, which are responsible for executing business logic.
 ---
-
 # Cloud functions
 
 > Dynamic web applications require a trusted compute process to execute business logic. Functional Web Apps are primarily composed of cloud functions, which are responsible for that trusted compute.
