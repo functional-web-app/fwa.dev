@@ -8,7 +8,7 @@ description: An architectural pattern for building dynamic, full-stack web appli
 
 Today, almost all dynamic web applications are built either by load-balancing a fleet of servers, or deploying static pages that call out to an assortment of third-party services.
 
-The tradeoffs of these two approaches are well-known. Load-balanced server fleets require deep domain expertise, and are challenging and time-consuming to provision, maintain, and scale. Static-centric architectures (like SPAs and the JAMstack) move dynamic functionality behind loading spinners and skeleton screens because customer web browsers are not a secure environment for backend business logic.
+The trade-offs of these two approaches are well-known. Load-balanced server fleets require deep domain expertise, and are challenging and time-consuming to provision, maintain, and scale. Static-centric architectures (like SPAs and the JAMstack) move dynamic functionality behind loading spinners and skeleton screens because customer web browsers are not a secure environment for backend business logic.
 
 #### The Functional Web App is a different way to build dynamic full-stack web applications and APIs without these tradeoffs. It offers developers the flexibility of dynamic, full-stack applications paired with the ease of scaling a static website.
 
@@ -44,6 +44,17 @@ The Functional Web App approach offers unique characteristics that may be desira
 - Functional Web Apps are easier to develop, maintain, debug, and deliver than traditional dynamic full-stack web applications, giving them a significantly lower overall total cost of ownership.
 - Functional Web Apps can run locally and offline without complicated developer environments, improving developer velocity and reducing time to bug resolution.
 - Functional Web Apps do not require any specific domain expertise or specialization to build or manage. Anyone with a basic understanding of web development is capable of creating a fully-realized FWA.
+
+
+## Functional Web App goals
+
+When building a Functional Web App, it can be helpful to consider a goal state. The following are key objectives for FWA developers:
+
+- Author and maintain only unique business logic as pure cloud functions.
+- Persistence, eventing, and other full-stack or backend affordances should be first-class managed services.
+- Code _and_ infra dependencies are to be minimized, while ensuring both are explicity declared.
+- Accessible and inclusive by default.
+
 
 ---
 
