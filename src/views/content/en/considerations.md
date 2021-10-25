@@ -33,7 +33,7 @@ Some cloud function operations outside critical, user-facing paths may not have 
 
 Like every web application architecture, Functional Web Apps have affordances for delivering static and pre-rendered assets quickly and efficiently. However, the FWA approach strongly biases towards server-side rendering of HTML and API responses.
 
-Pre-rendered web apps force users to see loading spinners and skeleton screens before external resources (that may or may not be available) can be loaded by the client. This also has second-order impacts on users with accessibility needs, or who are on older devices or slower connections.
+Pre-rendered web apps force users to see loading spinners and skeleton screens before external resources can be loaded by the client (assuming they are available)[^3]. This also has second-order effects for users with accessibility needs, or who are on older devices or slower connections.
 
 Functional Web Apps are assumed to be dynamic by default, rendering personalized responses per-request, and progressively enhancing in the client where appropriate.
 
@@ -42,7 +42,7 @@ Functional Web Apps are assumed to be dynamic by default, rendering personalized
 
 Much has been said about [lock-in](https://martinfowler.com/articles/oss-lockin.html) and cloud portability as a consideration for application development. Because each platform has its own services, APIs, and requirements, the ideal of cloud portability largely remains a myth, even for supposedly portable workloads performed in containers.
 
-As the cloud has evolved, arguments for cloud portability are no longer rooted in valid concerns, and as such should not be a key objective of web application development. Shifting focus away from portability enables us to take full advantage of the powerful managed cloud infrastructure now available[^3].
+As the cloud has evolved, arguments for cloud portability are no longer rooted in valid concerns, and as such should not be a key objective of web application development. Shifting focus away from portability enables us to take full advantage of the powerful managed cloud infrastructure now available[^4].
 
 The practice of using managed cloud services does imply abdicating some level of control to the upstream cloud vendor. As such, choice of your primary cloud vendor should always be done with care and intention.
 
@@ -67,4 +67,5 @@ Functional Web Apps instead rely on [deterministic deployment](/deterministic-de
 
 [^1]: A common fat function example is mounting a web server inside a cloud function that responds to all traffic. Cloud functions themselves should be capable of receiving and responding to events, FWAs rely on API gateways to be responsible for marshaling HTTP, not locally-running web servers.
 [^2]: If 1 MB is 500 pages of text, then 5 MB equates to roughly 2,500 pages of text per cloud function.
-[^3]: [Cloud functions](/cloud-functions) are a good example of vendor-specific managed services that unlock new development patterns, such as Functional Web Apps. And while there is variation in vendor offerings, cloud functions do have at least one de facto and stable category leader.
+[^3]: While it is broadly assumed that JS will successfully load and requests to external APIs will complete in a timely manner, that is not a safe assumption. Network failures occur, bad builds go out, and external services go down. Fast, accessible web experiences assume fully-functional HTML that is later progressively enhanced. [Read more](https://technology.blog.gov.uk/2016/09/19/why-we-use-progressive-enhancement-to-build-gov-uk/).
+[^4]: [Cloud functions](/cloud-functions) are a good example of vendor-specific managed services that unlock new development patterns, such as Functional Web Apps. And while there is variation in vendor offerings, cloud functions do have at least one de facto and stable category leader.
