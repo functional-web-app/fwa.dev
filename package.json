@@ -1,6 +1,6 @@
 {
   "name": "fwa.dev",
-  "version": "1.3.1",
+  "version": "1.3.2",
   "description": "The Functional Web App (fwa.dev)",
   "scripts": {
     "start": "sandbox",
