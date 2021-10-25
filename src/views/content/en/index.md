@@ -55,6 +55,11 @@ When building a Functional Web App, it can be helpful to consider a goal state. 
 - Code _and_ infra dependencies are to be minimized, while ensuring both are explicity declared.
 - Build accessible and inclusive applications by default by rendering responses.
 
+
+## Considerations & trade-offs
+
+Any choice in application architecture has trade-offs and considerations. Learn more about the [considerations & trade-offs](/considerations) to be taken into account when building a Functional Web App.
+
 ---
 
 ### Acknowledgments
