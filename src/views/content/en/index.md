@@ -53,8 +53,7 @@ When building a Functional Web App, it can be helpful to consider a goal state. 
 - Author and maintain only unique business logic as pure cloud functions.
 - Persistence, eventing, and other full-stack or backend affordances should be first-class managed services.
 - Code _and_ infra dependencies are to be minimized, while ensuring both are explicity declared.
-- Accessible and inclusive by default.
-
+- Build accessible and inclusive applications by default by rendering responses.
 
 ---
 

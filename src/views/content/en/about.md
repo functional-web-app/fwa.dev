@@ -19,21 +19,21 @@ TKTK
 # Trade-offs
 
 <details>
-  <summary>Portability</summary> 
+  <summary>Portability</summary>
   <p>Having a preference for managed services means abdicating some level of control to the upstream vendor. Cloud functions are very early technology and as such are very vendor specific; but cloud functions do have at least one defacto and stable leader today. This is perhaps the most important dependency for the Functional Web App so <a href=/examples>choose your primary cloud vendor with care and intention</a>.</p>
 </details>
 <details>
-  <summary>Familiarity</summary> 
+  <summary>Familiarity</summary>
   <p>This is a different way to approach building dynamic web apps. Functional Web Apps eschew traditional architectural metaphors but most notably the concept of a 'server' and 'database server'. This will feel a little weird. But only because having a server is familiar not because it is a necessary abstraction for modelling unique business logic. Traditional database systems cannot cope with the auto-scaling nature of cloud functions which leads to stability issues managing connections. Managed database scale up to meet demand without these challenges.</p>
 </details>
 <details>
-  <summary>Coldstart</summary> 
+  <summary>Coldstart</summary>
   <p>Coldstart is directly corelated to function payload size. The larger the function the longer it will take to boot up cold. The rule of thumb is to keep function payloads under 5mb to coldstart sub-second. In practice divvying up an application into single-responsbility discreet functions this upper bound is a generous amount of room. If 1mb is 500 pages of text then this means you have rougly 2500 pages of text to work with _per cloud function_!</p>
 </details>
 
 # Code smells
 
-Common stumbling blocks to avoid when building a Functional Web App. 
+Common stumbling blocks to avoid when building a Functional Web App.
 
 <details>
   <summary>Fat functions</summary>
@@ -65,11 +65,11 @@ Tradeoffs. Common objections to Functional Web Apps and how to fix them.
 
 ## Coldstart
 
-Functional Web Apps encourage small single-responsbility functions. In practice this means functions should be under 5mb in order to coldstart sub-second. As a final resort most cloud function providers also allow pre-provisioning capacity. 
+Functional Web Apps encourage small single-responsbility functions. In practice this means functions should be under 5mb in order to coldstart sub-second. As a final resort most cloud function providers also allow pre-provisioning capacity.
 
 ## Infa as Code (IaC) complexity
 
-Very large declarative manifests can grow unweildly and difficult to test in larger applications. Infrastructure provisioned by imperative languages can be non-determinsitic especially when userland can introduce breaking changes. As with most large complexity problems the solution is to break the problem down into smaller pieces. 
+Very large declarative manifests can grow unweildly and difficult to test in larger applications. Infrastructure provisioned by imperative languages can be non-determinsitic especially when userland can introduce breaking changes. As with most large complexity problems the solution is to break the problem down into smaller pieces.
 
 ## Specialized database
 
