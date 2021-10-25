@@ -6,10 +6,13 @@ module.exports = function layout (props) {
   title = title ? `${title} | ${fwa}` : fwa
   description = description ? `<meta description="${description}">` : ''
 
-  let file = path === '/'
+  let isIndex = path === '/'
+  let file = isIndex
     ? 'index'
     : path.replace('/', '')
+  let backLink = isIndex ? '' : `<a href="/"><h3>The Functional Web App</h3></a>`
   let editLink = path ? `<a href="https://github.com/functional-web-app/fwa.dev/blob/main/src/views/md/${file}.md">Edit or translate this page</a>` : ''
+
   return `<!doctype html>
 <html>
 <head>
@@ -20,6 +23,7 @@ module.exports = function layout (props) {
 </head>
 <body>
   <main>
+    ${backLink}
     ${body}
   </main>
   <footer>
