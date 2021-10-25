@@ -1,7 +1,7 @@
 let layout = require('./layout')
 let footnote = require('markdown-it-footnote')
 let meta = require('markdown-it-meta')
-let md = require('markdown-it')()
+let md = require('markdown-it')({ html: true })
   .use(footnote)
   .use(meta)
 let notFound = require('../views/errors/404')

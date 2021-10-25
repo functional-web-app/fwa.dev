@@ -15,14 +15,18 @@ The trade-offs of these two approaches are well-known. Load-balanced server flee
 
 ## The three facets of the Functional Web App
 
-### 1. [Cloud functions](/cloud-functions)
+<div id="list">
+
+### <div id="num">1.</div> [Cloud functions](/cloud-functions)
 #### Apps are primarily composed of single-responsibility [cloud functions](/cloud-functions)
 
-### 2. [Managed database](/managed-database)
+### <div id="num">2.</div> [Managed database](/managed-database)
 #### Persistence is securely maintained with a [fully-managed database](/managed-database)
 
-### 3. [Deterministic deployment](/deterministic-deployment)
+### <div id="num">3.</div> [Deterministic deployment](/deterministic-deployment)
 #### Infrastructure dependencies are explicitly defined and [deterministically deployed](/deterministic-deployment)
+
+</div>
 
 
 ## How Functional Web Apps are different

@@ -29,8 +29,30 @@ module.exports = function styles (/* props */) {
       padding: 0 10px;
     }
 
+    h2 {
+      margin-top: 2.5rem;
+    }
+
     h4 {
       font-weight: 600;
+    }
+
+    #num {
+      min-width: 1rem;
+      display: inline-block;
+    }
+
+    #list h3, h4 {
+      margin: 0;
+    }
+
+    #list h4 {
+      margin-bottom: 1rem;
+      padding-left: 1.5rem;
+    }
+
+    hr {
+      margin: 2rem 0;
     }
 
   `.replace(/\s+/g, ' ').trim()
