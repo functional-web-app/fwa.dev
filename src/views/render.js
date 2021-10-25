@@ -10,7 +10,7 @@ let fs = require('fs')
 let cache = {}
 
 /** render markdown for given path w layout */
-module.exports = function render ({ pathToFile, path }) {
+module.exports = function render ({ lang, pathToFile, path }) {
 
   // cache html between invocations
   if (!cache[pathToFile]) {
@@ -29,6 +29,7 @@ module.exports = function render ({ pathToFile, path }) {
     let body = md.render(raw)
     cache[pathToFile] = layout({
       body,
+      lang,
       path,
       ...md.meta,
     })

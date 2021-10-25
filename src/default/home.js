@@ -16,7 +16,7 @@ module.exports = async function handle (request) {
       ? join(base, lang, 'index.md')
       : join(base, lang, `${path.replace('/', '')}.md`)
 
-    return render({ pathToFile, path })
+    return render({ lang, pathToFile, path })
   }
   catch (e) {
     return fail(e)
