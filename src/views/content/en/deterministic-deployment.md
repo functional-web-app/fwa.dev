@@ -4,8 +4,6 @@ description: Cloud infrastructure is an application dependency that must always 
 ---
 # Deterministic deployment
 
-
-
 Cloud infrastructure[^1] is an application dependency. As with libraries / packages, applications must explicitly define dependencies to ensure safe, reliable software delivery and operation.
 
 Functional Web Apps achieve deterministic deployment by explicitly defining cloud infrastructure dependencies in version control alongside the code that depends on it.
