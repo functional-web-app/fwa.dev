@@ -17,7 +17,7 @@ Functional Web App operations execute in discrete cloud function processes, each
 
 Each process executes in a secure sandbox totally isolated from noisy (and nosy) concurrent neighbor processes. Because of their size, statelessness, and isolation, cloud functions have inherently high concurrency, enabling FWAs to achieve the horizontal scalability necessary to meet any level of demand without developer intervention.
 
-Traditional dynamic applications rely on long-lived stateful processes that require significant consideration to scale vertically and horizontally; such applications run on servers that take minutes or hours to spin up. In contrast, FWAs both scale transparently and are not affected by classes of bugs that affect long-lived processes, like slow memory leaks.
+Traditional dynamic applications rely on long-lived stateful processes that require significant consideration to scale vertically and horizontally; such applications run on servers that take minutes to spin up. In contrast, FWAs both scale transparently and are not affected by classes of bugs that affect long-lived processes, like slow memory leaks.
 
 
 ### Secure
