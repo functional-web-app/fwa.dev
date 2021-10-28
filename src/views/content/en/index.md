@@ -43,7 +43,7 @@ Functional Web Architectures:
 
 ## Why build with a Functional Web Architecture?
 
-Build a Functional Web Architecture because:
+Build with a Functional Web Architecture because:
 
 - they combine the power and flexibility of dynamic, full-stack web applications with the ease and simplicity of scaling a static website.
 - code runs in isolation, ensuring unrelated code is never run in the same process, thereby reducing bug surface area and potential security issues.
