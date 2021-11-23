@@ -56,8 +56,8 @@ The Functional Web App approach offers unique characteristics that may be desira
 - FWAs do not require any specific domain expertise or specialization to build or manage. Anyone with a basic understanding of web development is capable of creating a fully-realized FWA.
 
 ## Get Involved
- * Join discord
- * Join the mailing list
+ * [Join discord](https://discord.gg/jtb2CK5E)
+ * [Join the mailing list](/)
  * [Try it out](/examples)
 
 
