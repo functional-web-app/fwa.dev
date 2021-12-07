@@ -10,7 +10,7 @@ Today’s web applications are built either by load-balancing a fleet of servers
 
 However, these approaches require  load-balanced server fleets and deep domain expertise, and are challenging and time-consuming to provision, maintain, and scale. Static-centric architectures (like SPAs and the JAMstack) move dynamic functionality behind loading screens, as customer web browsers are not a secure environment for backend business logic.
 
-#### The Functional Web App (FWA) is an architectural pattern for building web applications and APIs without these tradeoffs. It offers developers the flexibility of dynamic, full-stack applications paired with the ease of scaling a static website.
+#### Functional Web App (FWA) are an architectural pattern for building web applications and APIs without these tradeoffs. It offers developers the flexibility of dynamic, full-stack applications paired with the ease of scaling a static website.
 
 
 ## The three facets of the Functional Web App
