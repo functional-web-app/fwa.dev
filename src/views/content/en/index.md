@@ -4,11 +4,12 @@ description: An architectural pattern for building dynamic, full-stack web appli
 ---
 # Functional Web Apps
 
-> Functional Web Apps are the best way to build infinitely scalable, dynamic, full-stack web applications and APIs.
+> Functional Web Apps are the best way to build dynamic, full-stack, auto-scaling web applications and APIs.
 
-Today’s web applications are built either by load-balancing a fleet of servers, or deploying static pages that call out to an assortment of third-party services.
+Today's web applications are built either by load-balancing a fleet of servers, or deploying static pages that call out to an assortment of third-party services.
 
-However, these approaches require  load-balanced server fleets and deep domain expertise, and are challenging and time-consuming to provision, maintain, and scale. Static-centric architectures (like SPAs and the JAMstack) move dynamic functionality behind loading screens, as customer web browsers are not a secure environment for backend business logic.
+Load-balanced server fleets require deep domain expertise, and are challenging and time-consuming to provision, maintain, and scale. Static-centric architectures (like SPAs and the JAMstack) move dynamic functionality behind loading screens, as customer web browsers are not a secure environment for backend business logic.
+
 
 #### Functional Web App (FWA) are an architectural pattern for building web applications and APIs without these tradeoffs. It offers developers the flexibility of dynamic, full-stack applications paired with the ease of scaling a static website.
 
@@ -35,6 +36,7 @@ These facets are created when FWA developers follow the following principles:
 - Code _and_ infra dependencies are to be minimized, while ensuring both are explicity declared.
 - Build accessible and inclusive applications by dynamically rendering HTML responses.
 
+
 ## What makes Functional Web Apps different
 
 The two dominant paradigms for web development today offer a choice between building a highly flexible but difficult to scale server-based architecture, or a far more scalable, but limited, client-centric application. Functional Web Apps offer a best of both worlds alternative, without the tradeoffs.
@@ -55,14 +57,24 @@ The Functional Web App approach offers unique characteristics that may be desira
 - FWAs can run locally and offline without complicated developer environments, improving velocity and reducing time to bug resolution.
 - FWAs do not require any specific domain expertise or specialization to build or manage. Anyone with a basic understanding of web development is capable of creating a fully-realized FWA.
 
-## Get Involved
- * [Join discord](https://discord.gg/jtb2CK5E)
- * [Join the mailing list](/)
- * [Try it out](/examples)
 
+## Get involved
+
+- [Try it out](/examples)
+- [Join Discord](https://discord.gg/jtb2CK5E)
+- [Join the mailing list](/)
+
+
+## Additional resources
+
+#### Considerations & trade-offs
+Learn more about the [considerations & trade-offs](/considerations) to be taken into account when building a Functional Web App.
+
+#### 2-tier, 3-tier, & FWA architectures
+A deep-dive comparing [2-tier, 3-tier, & FWA architectures](/architecture-tiers).
 
 ---
 
 ### Acknowledgments
 
-Written by Brian LeRoux & Ryan Block from [Begin](https://begin.com), with help from Kristofer Joseph, James Lindenbaum, & Dana Oshiro
+Written by Brian LeRoux & Ryan Block from [Begin](https://begin.com), with help from Frances Berriman, Kristofer Joseph, James Lindenbaum, & Dana Oshiro
