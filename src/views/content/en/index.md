@@ -14,7 +14,7 @@ Load-balanced server fleets require deep domain expertise, and are challenging a
 #### Functional Web App (FWA) are an architectural pattern for building web applications and APIs without these tradeoffs. It offers developers the flexibility of dynamic, full-stack applications paired with the ease of scaling a static website.
 
 
-## The three facets of the Functional Web App
+## The three facets of Functional Web Apps
 
 <div id="list">
 
