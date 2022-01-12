@@ -284,16 +284,24 @@ module.exports = function HomePage(state={}, html, store) {
           bg-mid
         "
       >
-        <h2
+        <div
           class="
-            mb-6
-            text-1
-            text1-lg
-            font-semibold
+            flex
+            items-center
           "
         >
-          Fundamentally dynamic
-        </h2>
+          <fwa-icon class="mr-12" href="gears"></fwa-icon>
+          <h2
+            class="
+              mb-6
+              text-1
+              text1-lg
+              font-semibold
+            "
+          >
+            Fundamentally dynamic
+          </h2>
+        </div>
         <p
           class="
             text-2
@@ -310,42 +318,24 @@ module.exports = function HomePage(state={}, html, store) {
           bg-mid
         "
       >
-        <h2
+        <div
           class="
-            mb-6
-            text-1
-            text1-lg
-            font-semibold
+            flex
+            items-center
           "
         >
-          Simple to debug
-        </h2>
-        <p
-          class="
-            text-2
-            text-1-lg
-            leading4
-          "
-        >
-          FWA compute processes are inactive and inert by default. By statelessly activating upon invocation, FWAs are scalable, secure, and simple to debug.
-        </p>
-      </li>
-
-      <li
-        class="
-          bg-mid
-        "
-      >
-        <h2
-          class="
-            mb-6
-            text-1
-            text1-lg
-            font-semibold
-          "
-        >
-          Simple to debug
-        </h2>
+          <fwa-icon class="mr-12" href="check"></fwa-icon>
+          <h2
+            class="
+              mb-6
+              text-1
+              text1-lg
+              font-semibold
+            "
+          >
+            Simple to debug
+          </h2>
+        </div>
         <p
           class="
             text-2

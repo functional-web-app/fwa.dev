@@ -12,6 +12,14 @@ module.exports = function Head(state={}) {
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/_static/styles.css">
   <style>
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+    .icon {
+      width: 1.666rem;
+      height: 1.666rem;
+    }
     .font-custom {
       font-family: 'Poppins', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     }
@@ -46,6 +54,10 @@ module.exports = function Head(state={}) {
     }
 
     @media only screen and (min-width:48em) {
+      .icon-lg {
+        width: 2.777rem;
+        height: 2.777rem;
+      }
       .circle-size {
         width: 2rem;
         height: 2rem;
