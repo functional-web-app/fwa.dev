@@ -2,25 +2,17 @@ module.exports = function SectionLight(state={}, html) {
   return html`
 <section
   class="
-    pt3
-    pr0
-    pl0
-    pb3
+    pt11
+    pt13-lg
+    pr1
+    pl1
+    pb12
+    pb16-lg
     text-dark
     bg-light
   "
 >
-  <div
-    class="
-      max-width-1200-lg
-      flex-lg
-      items-center
-      justify-between
-      m-auto
-    "
-  >
-    <slot></slot>
-  </div>
+  <slot></slot>
 </section>
   `
 }

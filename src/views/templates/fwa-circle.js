@@ -3,14 +3,16 @@ module.exports = function Circle() {
 <div
   class="
     inline-flex
-    align-center
+    items-center
     justify-center
+    mr-6
+    mr-3
     circle-size
-    pt-6
-    pt-4-lg
+    text-5
+    text1-lg
     border-current
     border-solid
-    border2
+    border1
     radius-100
   "
 >

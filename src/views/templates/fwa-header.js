@@ -1,20 +1,15 @@
-module.exports = function Header() {
-  return /* html */`
+module.exports = function Header(state={}, html) {
+  return html`
 <header
   class="
-    max-width-1200-lg
-    m-auto
+    pt0
+    pr0
+    pr1-lg
+    pl0
+    pl1-lg
   "
 >
-  <h2
-    class="
-      text-light
-      font-black
-      text1
-    "
-  >
-    fwa.dev
-  </h2>
+  <slot></slot>
 </header>
  `
 }
