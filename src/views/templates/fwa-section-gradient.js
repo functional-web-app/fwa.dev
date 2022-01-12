@@ -2,11 +2,11 @@ module.exports = function SectionLight(state={}, html) {
   return html`
 <section
   class="
-    pt3
+    pt11
     pr0
     pl0
-    pb4
-    text-dark
+    pb12
+    text-light
     bg-gradient
   "
 >

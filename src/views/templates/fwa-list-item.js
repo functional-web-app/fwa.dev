@@ -4,7 +4,9 @@ module.exports = function ListItem(state={}, html) {
   class="
     mb0
     mb1-lg
-    text1-lg
+    text-2
+    text2-lg
+    leading4
   "
 >
   <slot></slot>

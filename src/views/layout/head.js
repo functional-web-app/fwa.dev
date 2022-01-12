@@ -37,8 +37,8 @@ module.exports = function Head(state={}) {
       border-color: currentColor;
     }
     .circle-size {
-      width: 1.25rem;
-      height: 1.25rem;
+      width: 0.888rem;
+      height: 0.888rem;
     }
 
     .max-width-275 {
@@ -50,17 +50,17 @@ module.exports = function Head(state={}) {
         width: 2rem;
         height: 2rem;
       }
-      .max-width-450-lg {
-        max-width: 25rem;
+      .max-width-508-lg {
+        max-width: 28rem;
       }
       .max-width-575-lg {
         max-width: 31.95rem;
       }
-      .max-width-650-lg {
-        max-width: 36.111rem;
+      .max-width-810-lg {
+        max-width: 45rem;
       }
-      .max-width-1200-lg {
-        max-width: 66.666rem;
+      .max-width-full-lg {
+        max-width: 65rem;
       }
     }
   </style>

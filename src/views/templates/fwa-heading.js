@@ -3,8 +3,8 @@ module.exports = function Heading(state={}, html) {
 <h2
   class="
     font-light
-    text1
-    text2-lg
+    text2
+    text10-lg
     leading1
   "
 >
