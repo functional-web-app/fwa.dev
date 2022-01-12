@@ -52,6 +52,18 @@ module.exports = function Head(state={}) {
     .max-width-275 {
       max-width: 15.27rem;
     }
+    .border-hover-light:active,
+    .border-hover-light:hover {
+      border-color: var(--light)
+    }
+    .bg-hover-light:active,
+    .bg-hover-light:hover {
+      background: var(--light)
+    }
+    .text-hover-accent-dark:active,
+    .text-hover-accent-dark:hover {
+      color: var(--accent-dark)
+    }
 
     @media only screen and (min-width:48em) {
       .icon-lg {
@@ -61,6 +73,9 @@ module.exports = function Head(state={}) {
       .circle-size {
         width: 2rem;
         height: 2rem;
+      }
+      .max-width-370-lg {
+        max-width: 20.555rem;
       }
       .max-width-508-lg {
         max-width: 28rem;
