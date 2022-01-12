@@ -15,7 +15,6 @@ module.exports = function HomePage(state={}, html, store) {
 </fwa-header>
 <fwa-hero></fwa-hero>
 <fwa-section-light>
-
   <div
     class="
       max-width-full-lg
@@ -231,66 +230,130 @@ module.exports = function HomePage(state={}, html, store) {
   </fwa-container-full>
 </fwa-section-light>
 <fwa-section-gradient>
-  <h2
-    class="
-      text2
-      text10-lg
-    "
-  >
-    Functional <fwa-heading-accent>Web App</fwa-heading-accent>
-  </h2>
-</fwa-section-gradient>
-<fwa-section-mid>
-  <div
-    class="
-      grid
-      gap3
-      flow-col-lg
-    "
-  >
-
-  <div>
-
+  <fwa-container-full>
     <h2
       class="
         text2
         text10-lg
-        mb3
       "
     >
-      What makes Functional Web Apps <fwa-heading-accent>different</fwa-heading-accent>
+      Functional <fwa-heading-accent>Web App</fwa-heading-accent>
     </h2>
-
-    <p
+  </fwa-container-full>
+</fwa-section-gradient>
+<fwa-section-mid>
+  <fwa-container-full>
+    <div
       class="
-        text-2
-        text1-lg
-        leading4
-      "
-    >
-      The two dominant paradigms for web development today offer a choice between building a highly flexible but difficult to scale server-based architecture, or a far more scalable, but limited, client-centric application. Functional Web Apps offer a best of both worlds alternative, without the tradeoffs.
-    </p>
-
-  </div>
-    <ul
-      class="
-        list-none
         grid
         gap3
+        flow-col-lg
       "
     >
-      <li
+
+    <div>
+
+      <h2
         class="
-          bg-mid
+          text2
+          text10-lg
+          mb3
         "
       >
-        <div
+        What makes Functional Web Apps <fwa-heading-accent>different</fwa-heading-accent>
+      </h2>
+
+      <p
+        class="
+          text-2
+          text1-lg
+          leading4
+        "
+      >
+        The two dominant paradigms for web development today offer a choice between building a highly flexible but difficult to scale server-based architecture, or a far more scalable, but limited, client-centric application. Functional Web Apps offer a best of both worlds alternative, without the tradeoffs.
+      </p>
+
+    </div>
+      <ul
+        class="
+          list-none
+          grid
+          gap3
+        "
+      >
+        <li
           class="
-            flex
-            items-center
+            bg-mid
           "
         >
-          <fwa-icon class="mr-12" href="gears"></fwa-icon>
+          <div
+            class="
+              flex
+              items-center
+            "
+          >
+            <fwa-icon class="mr-12" href="gears"></fwa-icon>
+            <h2
+              class="
+                mb-6
+                text-1
+                text1-lg
+                font-semibold
+              "
+            >
+              Fundamentally dynamic
+            </h2>
+          </div>
+          <p
+            class="
+              text-2
+              text-1-lg
+              leading4
+            "
+          >
+            FWAs are fundamentally dynamic, yet also fully abstract cloud infrastructure, enabling developers to more directly invest their time in servicing customer needs.
+          </p>
+        </li>
+
+        <li
+          class="
+            bg-mid
+          "
+        >
+          <div
+            class="
+              flex
+              items-center
+            "
+          >
+            <fwa-icon class="mr-12" href="check"></fwa-icon>
+            <h2
+              class="
+                mb-6
+                text-1
+                text1-lg
+                font-semibold
+              "
+            >
+              Simple to debug
+            </h2>
+          </div>
+          <p
+            class="
+              text-2
+              text-1-lg
+              leading4
+            "
+          >
+            FWA compute processes are inactive and inert by default. By statelessly activating upon invocation, FWAs are scalable, secure, and simple to debug.
+          </p>
+        </li>
+
+        <li
+          class="
+            bg-mid
+          "
+        >
           <h2
             class="
               mb-6
@@ -299,32 +362,24 @@ module.exports = function HomePage(state={}, html, store) {
               font-semibold
             "
           >
-            Fundamentally dynamic
+            Easier to maintain
           </h2>
-        </div>
-        <p
-          class="
-            text-2
-            text-1-lg
-            leading4
-          "
-        >
-          FWAs are fundamentally dynamic, yet also fully abstract cloud infrastructure, enabling developers to more directly invest their time in servicing customer needs.
-        </p>
-      </li>
+          <p
+            class="
+              text-2
+              text-1-lg
+              leading4
+            "
+          >
+            FWAs are inherently trivial to update, facilitating rapid change instead of laborious refactors. FWA deployment is measured in seconds, not minutes or hours.
+          </p>
+        </li>
 
-      <li
-        class="
-          bg-mid
-        "
-      >
-        <div
+        <li
           class="
-            flex
-            items-center
+            bg-mid
           "
         >
-          <fwa-icon class="mr-12" href="check"></fwa-icon>
           <h2
             class="
               mb-6
@@ -333,76 +388,25 @@ module.exports = function HomePage(state={}, html, store) {
               font-semibold
             "
           >
-            Simple to debug
+            Reproducible
           </h2>
-        </div>
-        <p
-          class="
-            text-2
-            text-1-lg
-            leading4
-          "
-        >
-          FWA compute processes are inactive and inert by default. By statelessly activating upon invocation, FWAs are scalable, secure, and simple to debug.
-        </p>
-      </li>
+          <p
+            class="
+              text-2
+              text-1-lg
+              leading4
+            "
+          >
+            FWA infrastructure is explicitly defined and identically reproducible every time; this results in highly reliable delivery with low total cost of ownership, and faster issue resolution.
+          </p>
+        </li>
+      </ul>
 
-      <li
-        class="
-          bg-mid
-        "
-      >
-        <h2
-          class="
-            mb-6
-            text-1
-            text1-lg
-            font-semibold
-          "
-        >
-          Easier to maintain
-        </h2>
-        <p
-          class="
-            text-2
-            text-1-lg
-            leading4
-          "
-        >
-          FWAs are inherently trivial to update, facilitating rapid change instead of laborious refactors. FWA deployment is measured in seconds, not minutes or hours.
-        </p>
-      </li>
-
-      <li
-        class="
-          bg-mid
-        "
-      >
-        <h2
-          class="
-            mb-6
-            text-1
-            text1-lg
-            font-semibold
-          "
-        >
-          Reproducible
-        </h2>
-        <p
-          class="
-            text-2
-            text-1-lg
-            leading4
-          "
-        >
-          FWA infrastructure is explicitly defined and identically reproducible every time; this results in highly reliable delivery with low total cost of ownership, and faster issue resolution.
-        </p>
-      </li>
-    </ul>
-
-  </div>
+    </div>
+  </fwa-container-full>
 </fwa-section-mid>
 <fwa-section-light>
+  <fwa-container-full>
     <h2
       class="
         text2
@@ -415,6 +419,9 @@ module.exports = function HomePage(state={}, html, store) {
 
     <p
       class="
+        max-width-810-lg
+        mb3
+        mb11-lg
         text-2
         text1-lg
         leading4
@@ -422,6 +429,307 @@ module.exports = function HomePage(state={}, html, store) {
     >
       The Functional Web App approach offers unique characteristics that may be desirable for evolving your existing application or building your next:
     </p>
+
+    <ul
+      class="
+        list-none
+        grid
+        gap3
+        flow-col-lg
+        row-2
+      "
+    >
+      <li
+        class="
+          p1
+          bg-mid
+        "
+      >
+        <h2
+          class="
+            mb-6
+            text-1
+            text1-lg
+            font-semibold
+          "
+        >
+          Power and flexibility
+        </h2>
+        <p
+          class="
+            text-2
+            text-1-lg
+            leading4
+          "
+        >
+          FWAs combine the power and flexibility of dynamic, full-stack web applications with the ease and simplicity of scaling a static website.
+        </p>
+      </li>
+      <li
+        class="
+          p1
+          bg-mid
+        "
+      >
+        <h2
+          class="
+            mb-6
+            text-1
+            text1-lg
+            font-semibold
+          "
+        >
+          Code runs in isolation
+        </h2>
+        <p
+          class="
+            text-2
+            text-1-lg
+            leading4
+          "
+        >
+          FWA code runs in isolation, ensuring unrelated code is never run in the same process, thereby reducing bug surface area and potential security issues.
+        </p>
+      </li>
+      <li
+        class="
+          p1
+          bg-mid
+        "
+      >
+        <h2
+          class="
+            mb-6
+            text-1
+            text1-lg
+            font-semibold
+          "
+        >
+          Easier to develop
+        </h2>
+        <p
+          class="
+            text-2
+            text-1-lg
+            leading4
+          "
+        >
+          FWAs are easier to develop, maintain, debug, and deliver than traditional dynamic full-stack web applications, giving them a significantly lower overall total cost of ownership.
+        </p>
+      </li>
+      <li
+        class="
+          p1
+          bg-mid
+        "
+      >
+        <h2
+          class="
+            mb-6
+            text-1
+            text1-lg
+            font-semibold
+          "
+        >
+          Work locally
+        </h2>
+        <p
+          class="
+            text-2
+            text-1-lg
+            leading4
+          "
+        >
+          FWAs can run locally and offline without complicated developer environments, improving velocity and reducing time to bug resolution.
+        </p>
+      </li>
+      <li
+        class="
+          p1
+          bg-mid
+        "
+      >
+        <h2
+          class="
+            mb-6
+            text-1
+            text1-lg
+            font-semibold
+          "
+        >
+          Anyone can build
+        </h2>
+        <p
+          class="
+            text-2
+            text-1-lg
+            leading4
+          "
+        >
+          FWAs do not require any specific domain expertise or specialization to build or manage. Anyone with a basic understanding of web development is capable of creating a fully-realized FWA.
+        </p>
+      </li>
+    </ul>
+  </fwa-container-full>
 </fwa-section-light>
+<fwa-section-gradient>
+  <fwa-container-full>
+    <div
+      class="
+        grid
+        gap1
+        flow-col-lg
+      "
+    >
+
+    <h2
+      class="
+        text2
+        text10-lg
+        mb3
+      "
+    >
+      Get <fwa-heading-accent>involved</fwa-heading-accent>
+    </h2>
+
+    <div
+      class="
+        grid
+        gap1
+      "
+    >
+      <fwa-link-button
+        href="https://fwa.dev/examples"
+      >
+        Try it out
+      </fwa-link-button>
+
+      <fwa-link-button
+        href="https://discord.gg/jtb2CK5E"
+      >
+        Join Discord
+      </fwa-link-button>
+
+      <fwa-link-button
+        href="https://fwa.dev/"
+      >
+        Join the mailing list
+      </fwa-link-button>
+    </div>
+
+    </div>
+  </fwa-container-full>
+</fwa-section-gradient>
+<fwa-section-light>
+  <fwa-container-full>
+    <h2
+      class="
+        text2
+        text10-lg
+        mb3
+      "
+    >
+      Additional <fwa-heading-accent>resources</fwa-heading-accent>
+    </h2>
+    <h3
+      class="
+        mb0
+        text-1
+        font-semibold
+      "
+    >
+      Coniderations & trade-offs
+    </h3>
+    <p
+      class="
+        mb2
+      "
+    >
+      Learn more about the considerations & trade-offs to be taken into account when building a Functional Web App.
+    </p>
+
+    <a
+      class="
+        block
+        mb3
+        font-medium
+      "
+    >
+      Learn more
+    </a>
+
+    <h3
+      class="
+        mb0
+        text-1
+        font-semibold
+      "
+    >
+      2-tier, 3-tier, & FWA architectures
+    </h3>
+    <p
+      class="
+        mb2
+      "
+    >
+      A deep-dive comparing 2-tier, 3-tier, & FWA architectures.
+    </p>
+
+    <a
+      class="
+        block
+        font-medium
+      "
+    >
+      Learn more
+    </a>
+
+  </fwa-container-full>
+</fwa-section-light>
+<fwa-section-dark>
+  <fwa-container-full>
+    <div
+      class="
+        grid
+        gap3
+        flow-col-lg
+      "
+    >
+      <h1
+        class="
+          text7
+          font-black
+        "
+      >
+        fwa.dev
+      </h1>
+      <div
+        class="
+          max-width-575-lg
+        "
+      >
+
+        <h2
+            class="
+              text2
+              text10-lg
+              mb3
+            "
+          >
+          <fwa-heading-accent>Acknowledgments</fwa-heading-accent>
+        </h2>
+        <p
+          class="
+            text-2
+            text-1-lg
+            leading4
+          "
+        >
+          Written by Brian LeRoux & Ryan Block from Begin, with help from Frances Berriman, Kristofer Joseph, James Lindenbaum, & Dana Oshiro
+        </p>
+      </div>
+    </div>
+  </fwa-container-full>
+</fwa-section-dark>
   `
 }
