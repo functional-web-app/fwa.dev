@@ -1,4 +1,4 @@
-module.exports = function SectionMid(state={}, html) {
+module.exports = function SectionMid (state = {}, html) {
   return html`
 <section
   class="

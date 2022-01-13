@@ -1,4 +1,4 @@
-module.exports = function ListItem(state={}, html) {
+module.exports = function ListItem (state = {}, html) {
   return html`
 <li
   class="

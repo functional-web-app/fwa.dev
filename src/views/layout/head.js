@@ -1,5 +1,5 @@
-module.exports = function Head(state={}) {
-  const { description='', title='' } = state
+module.exports = function Head (state = {}) {
+  const { description = '', title = '' } = state
   return `
 <head>
   <title>${title}</title>
