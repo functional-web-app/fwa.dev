@@ -1,4 +1,4 @@
-module.exports = function ContainerFull(state={}, html) {
+module.exports = function ContainerFull (state = {}, html) {
   return html`
 <div
   class="

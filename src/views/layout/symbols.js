@@ -1,4 +1,4 @@
-module.exports = function Symbols() {
+module.exports = function Symbols () {
   return `
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="0" height="0" style="display:none;">
   <symbol id="flash" fill="none" viewBox="0 0 30 30"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" d="M7.613 16.6h3.862v9c0 2.1 1.138 2.525 2.525.95l9.463-10.75c1.162-1.313.675-2.4-1.088-2.4h-3.862v-9c0-2.1-1.138-2.525-2.525-.95L6.525 14.2c-1.15 1.325-.662 2.4 1.088 2.4z"/></symbol>

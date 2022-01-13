@@ -1,4 +1,4 @@
-module.exports = function HomePage(state={}, html, store) {
+module.exports = function HomePage (state = {}, html) {
   return html`
 <fwa-header>
   <fwa-container-full>

@@ -1,5 +1,5 @@
-module.exports = function LinkButton(state={}, html) {
-  const { href='' } = state
+module.exports = function LinkButton (state = {}, html) {
+  const { href = '' } = state
   return html`
 <a
   class="

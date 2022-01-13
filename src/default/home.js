@@ -16,7 +16,7 @@ module.exports = async function handle (request) {
         'content-type': 'text/html'
       },
       body: html`
-${top({lang})}
+${top({ lang })}
   <fwa-page></fwa-page>
 ${bottom}
         `

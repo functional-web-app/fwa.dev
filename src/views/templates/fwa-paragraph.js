@@ -1,4 +1,4 @@
-module.exports = function Paragraph(state={}, html) {
+module.exports = function Paragraph (state = {}, html) {
   return html`
 <p
   class="

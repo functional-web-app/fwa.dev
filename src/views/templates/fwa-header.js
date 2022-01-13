@@ -1,4 +1,4 @@
-module.exports = function Header(state={}, html) {
+module.exports = function Header (state = {}, html) {
   return html`
 <header
   class="
