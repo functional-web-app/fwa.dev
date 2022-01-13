@@ -1,13 +1,13 @@
-module.exports = function SectionLight(state={}, html) {
+module.exports = function SectionLight (state = {}, html) {
   return html`
 <section
   class="
     pt11
-    pt13-lg
+    pt18-lg
     pr1
     pl1
     pb12
-    pb16-lg
+    pb18-lg
     text-dark
     bg-light
   "

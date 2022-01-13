@@ -1,4 +1,4 @@
-module.exports = function Circle() {
+module.exports = function Circle () {
   return `
 <div
   class="

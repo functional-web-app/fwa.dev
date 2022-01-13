@@ -1,4 +1,4 @@
-module.exports = function SectionLight(state={}, html) {
+module.exports = function SectionLight (state = {}, html) {
   return html`
 <section
   class="

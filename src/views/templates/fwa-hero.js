@@ -1,4 +1,4 @@
-module.exports = function Hero(state={}, html) {
+module.exports = function Hero (state = {}, html) {
   return html`
 <section
   class="

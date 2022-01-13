@@ -1,5 +1,5 @@
-module.exports = function Icon(state={}, html) {
-  const { href='' } = state
+module.exports = function Icon (state = {}, html) {
+  const { href = '' } = state
   return html`
 <div
   class="
