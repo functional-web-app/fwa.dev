@@ -240,6 +240,10 @@ module.exports = function HomePage(state={}, html, store) {
       Functional <fwa-heading-accent>Web App</fwa-heading-accent>
     </h2>
   </fwa-container-full>
+  <div class="flex flex-col">
+    <fwa-diagram-mobile class="hidden"></fwa-diagram-mobile>
+    <fwa-diagram-desktop class="hidden"></fwa-diagram-mobile>
+  </div>
 </fwa-section-gradient>
 <fwa-section-mid>
   <fwa-container-full>
