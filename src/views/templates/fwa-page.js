@@ -439,14 +439,16 @@ module.exports = function HomePage(state={}, html, store) {
         list-none
         grid
         gap3
-        flow-col-lg
+        flow-row-lg
         row-2
+        col-6-lg
       "
     >
       <li
         class="
           p1
           bg-mid
+          col-span-2-lg
         "
       >
         <h2
@@ -473,6 +475,7 @@ module.exports = function HomePage(state={}, html, store) {
         class="
           p1
           bg-mid
+          col-span-2-lg
         "
       >
         <h2
@@ -499,6 +502,7 @@ module.exports = function HomePage(state={}, html, store) {
         class="
           p1
           bg-mid
+          col-span-2-lg
         "
       >
         <h2
@@ -525,6 +529,8 @@ module.exports = function HomePage(state={}, html, store) {
         class="
           p1
           bg-mid
+          col-span-2-lg
+          col-start-2-lg
         "
       >
         <h2
@@ -551,6 +557,7 @@ module.exports = function HomePage(state={}, html, store) {
         class="
           p1
           bg-mid
+          col-span-2-lg
         "
       >
         <h2
