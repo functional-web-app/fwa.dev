@@ -13,7 +13,9 @@ module.exports = function HomePage (state = {}, html) {
     </h2>
   </fwa-container-full>
 </fwa-header>
+
 <fwa-hero></fwa-hero>
+
 <fwa-section-light>
   <div
     class="
@@ -49,6 +51,7 @@ module.exports = function HomePage (state = {}, html) {
     </ol>
   </div>
 </fwa-section-light>
+
 <fwa-section-mid>
   <fwa-container-full>
     <fwa-heading
@@ -118,6 +121,7 @@ module.exports = function HomePage (state = {}, html) {
     </div>
   </fwa-container-full>
 </fwa-section-mid>
+
 <fwa-section-gradient>
   <fwa-container-full>
     <fwa-paragraph class="text1-lg">
@@ -137,8 +141,10 @@ module.exports = function HomePage (state = {}, html) {
     >
       <fwa-heading-accent>The three facets</fwa-heading-accent> </br> of the Functional Web App
     </fwa-heading>
+
     <ul
       class="
+        mt10
         list-none
         grid
         gap3
@@ -151,7 +157,6 @@ module.exports = function HomePage (state = {}, html) {
           bg-mid
         "
       >
-
         <h2
           class="
             mb-6
@@ -229,6 +234,7 @@ module.exports = function HomePage (state = {}, html) {
     </ul>
   </fwa-container-full>
 </fwa-section-light>
+
 <fwa-section-gradient>
   <fwa-container-full>
     <h2
@@ -240,44 +246,56 @@ module.exports = function HomePage (state = {}, html) {
       Functional <fwa-heading-accent>Web App</fwa-heading-accent>
     </h2>
   </fwa-container-full>
+
   <div class="flex flex-col">
     <fwa-diagram-mobile class="hidden"></fwa-diagram-mobile>
     <fwa-diagram-desktop class="hidden"></fwa-diagram-mobile>
   </div>
 </fwa-section-gradient>
+
 <fwa-section-mid>
   <fwa-container-full>
     <div
       class="
         grid
-        gap3
+        gap5
         flow-col-lg
       "
     >
+      <div>
+        <h2
+          class="
+            text2
+            text10-lg
+            leading2
+            mb3
+          "
+        >
+          What makes Functional Web Apps <fwa-heading-accent>different</fwa-heading-accent>
+        </h2>
 
-    <div>
+        <p
+          class="
+            text-2
+            text1-lg
+            leading4
+          "
+        >
+          The two dominant paradigms for web development today offer a choice between building a highly flexible but difficult to scale server-based architecture, or a far more scalable, but limited, client-centric application.
+        </p>
 
-      <h2
-        class="
-          text2
-          text10-lg
-          mb3
-        "
-      >
-        What makes Functional Web Apps <fwa-heading-accent>different</fwa-heading-accent>
-      </h2>
+        <p
+          class="
+            mt1
+            text-2
+            text1-lg
+            leading4
+          "
+        >
+          Functional Web Apps offer a best of both worlds alternative, without the tradeoffs.
+        </p>
+      </div>
 
-      <p
-        class="
-          text-2
-          text1-lg
-          leading4
-        "
-      >
-        The two dominant paradigms for web development today offer a choice between building a highly flexible but difficult to scale server-based architecture, or a far more scalable, but limited, client-centric application. Functional Web Apps offer a best of both worlds alternative, without the tradeoffs.
-      </p>
-
-    </div>
       <ul
         class="
           list-none
@@ -308,6 +326,7 @@ module.exports = function HomePage (state = {}, html) {
               Fundamentally dynamic
             </h2>
           </div>
+
           <p
             class="
               text-2
@@ -342,6 +361,7 @@ module.exports = function HomePage (state = {}, html) {
               Simple to debug
             </h2>
           </div>
+
           <p
             class="
               text-2
@@ -405,10 +425,10 @@ module.exports = function HomePage (state = {}, html) {
           </p>
         </li>
       </ul>
-
     </div>
   </fwa-container-full>
 </fwa-section-mid>
+
 <fwa-section-light>
   <fwa-container-full>
     <h2
@@ -471,6 +491,7 @@ module.exports = function HomePage (state = {}, html) {
           FWAs combine the power and flexibility of dynamic, full-stack web applications with the ease and simplicity of scaling a static website.
         </p>
       </li>
+
       <li
         class="
           p1
@@ -498,6 +519,7 @@ module.exports = function HomePage (state = {}, html) {
           FWA code runs in isolation, ensuring unrelated code is never run in the same process, thereby reducing bug surface area and potential security issues.
         </p>
       </li>
+
       <li
         class="
           p1
@@ -525,6 +547,7 @@ module.exports = function HomePage (state = {}, html) {
           FWAs are easier to develop, maintain, debug, and deliver than traditional dynamic full-stack web applications, giving them a significantly lower overall total cost of ownership.
         </p>
       </li>
+
       <li
         class="
           p1
@@ -553,6 +576,7 @@ module.exports = function HomePage (state = {}, html) {
           FWAs can run locally and offline without complicated developer environments, improving velocity and reducing time to bug resolution.
         </p>
       </li>
+
       <li
         class="
           p1
@@ -583,6 +607,7 @@ module.exports = function HomePage (state = {}, html) {
     </ul>
   </fwa-container-full>
 </fwa-section-light>
+
 <fwa-section-gradient>
   <fwa-container-full>
     <div
@@ -592,45 +617,44 @@ module.exports = function HomePage (state = {}, html) {
         flow-col-lg
       "
     >
-
-    <h2
-      class="
-        text2
-        text10-lg
-        mb3
-      "
-    >
-      Get <fwa-heading-accent>involved</fwa-heading-accent>
-    </h2>
-
-    <div
-      class="
-        grid
-        gap1
-      "
-    >
-      <fwa-link-button
-        href="https://fwa.dev/examples"
+      <h2
+        class="
+          text2
+          text10-lg
+          mb3
+        "
       >
-        Try it out
-      </fwa-link-button>
+        Get <fwa-heading-accent>involved</fwa-heading-accent>
+      </h2>
 
-      <fwa-link-button
-        href="https://discord.gg/jtb2CK5E"
+      <div
+        class="
+          grid
+          gap1
+        "
       >
-        Join Discord
-      </fwa-link-button>
+        <fwa-link-button
+          href="https://fwa.dev/examples"
+        >
+          Try it out
+        </fwa-link-button>
 
-      <fwa-link-button
-        href="https://fwa.dev/"
-      >
-        Join the mailing list
-      </fwa-link-button>
-    </div>
+        <fwa-link-button
+          href="https://discord.gg/jtb2CK5E"
+        >
+          Join Discord
+        </fwa-link-button>
 
+        <fwa-link-button
+          href="https://fwa.dev/"
+        >
+          Join the mailing list
+        </fwa-link-button>
+      </div>
     </div>
   </fwa-container-full>
 </fwa-section-gradient>
+
 <fwa-section-light>
   <fwa-container-full>
     <h2
@@ -642,63 +666,7 @@ module.exports = function HomePage (state = {}, html) {
     >
       Additional <fwa-heading-accent>resources</fwa-heading-accent>
     </h2>
-    <h3
-      class="
-        mb0
-        text-1
-        font-semibold
-      "
-    >
-      Coniderations & trade-offs
-    </h3>
-    <p
-      class="
-        mb2
-      "
-    >
-      Learn more about the considerations & trade-offs to be taken into account when building a Functional Web App.
-    </p>
 
-    <a
-      class="
-        block
-        mb3
-        font-medium
-      "
-    >
-      Learn more
-    </a>
-
-    <h3
-      class="
-        mb0
-        text-1
-        font-semibold
-      "
-    >
-      2-tier, 3-tier, & FWA architectures
-    </h3>
-    <p
-      class="
-        mb2
-      "
-    >
-      A deep-dive comparing 2-tier, 3-tier, & FWA architectures.
-    </p>
-
-    <a
-      class="
-        block
-        font-medium
-      "
-    >
-      Learn more
-    </a>
-
-  </fwa-container-full>
-</fwa-section-light>
-<fwa-section-dark>
-  <fwa-container-full>
     <div
       class="
         grid
@@ -706,29 +674,106 @@ module.exports = function HomePage (state = {}, html) {
         flow-col-lg
       "
     >
-      <h1
-        class="
-          text7
-          font-black
-        "
-      >
-        fwa.dev
-      </h1>
+      <div>
+        <h3
+          class="
+            mb2
+            text4
+            font-semibold
+          "
+        >
+          Coniderations & trade-offs
+        </h3>
+
+        <p
+          class="
+            mb2
+            leading4
+          "
+        >
+          Learn more about the considerations & trade-offs to be taken into account when building a Functional Web App.
+        </p>
+
+        <a
+          class="
+            block
+            font-semibold
+            text0
+          "
+        >
+          Learn more
+        </a>
+      </div>
+
+      <div>
+        <h3
+          class="
+            mb2
+            text4
+            font-semibold
+          "
+        >
+          2-tier, 3-tier, & FWA architectures
+        </h3>
+
+        <p
+          class="
+            mb2
+            leading4
+          "
+        >
+          A deep-dive comparing 2-tier, 3-tier, & FWA architectures.
+        </p>
+
+        <a
+          class="
+            block
+            font-semibold
+            text0
+          "
+        >
+          Learn more
+        </a>
+      </div>
+    </div>
+  </fwa-container-full>
+</fwa-section-light>
+
+<fwa-section-dark>
+  <fwa-container-full>
+    <div
+      class="
+        grid
+        gap3
+        col-2
+      "
+    >
+      <div>
+        <h1
+          class="
+            text7
+            font-black
+          "
+        >
+          fwa.dev
+        </h1>
+      </div>
+
       <div
         class="
           max-width-575-lg
         "
       >
-
         <h2
             class="
               text2
-              text10-lg
+              text7-lg
               mb3
             "
           >
           <fwa-heading-accent>Acknowledgments</fwa-heading-accent>
         </h2>
+
         <p
           class="
             text-2
