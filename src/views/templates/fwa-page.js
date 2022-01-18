@@ -239,6 +239,7 @@ module.exports = function HomePage (state = {}, html) {
   <fwa-container-full>
     <h2
       class="
+        mb9-lg
         text2
         text10-lg
       "
@@ -248,8 +249,8 @@ module.exports = function HomePage (state = {}, html) {
   </fwa-container-full>
 
   <div class="flex flex-col">
-    <fwa-diagram-mobile class="hidden"></fwa-diagram-mobile>
-    <fwa-diagram-desktop class="hidden"></fwa-diagram-mobile>
+    <fwa-diagram-mobile class="hidden-lg"></fwa-diagram-mobile>
+    <fwa-diagram-desktop class="hidden block-lg"></fwa-diagram-mobile>
   </div>
 </fwa-section-gradient>
 
