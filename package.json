@@ -6,7 +6,8 @@
   "scripts": {
     "start": "sandbox",
     "lint": "arc hydrate && eslint . --fix",
-    "test": "npm run lint"
+    "test": "npm run lint",
+    "icons": "svg-symbols ./icons > ./icons/symbols.svg"
   },
   "dependencies": {
     "@architect/architect": "^9.5.4",
@@ -22,7 +23,12 @@
     "extends": "@architect/eslint-config",
     "rules": {
       "require-await": "off",
-      "no-unused-vars": ["error", { "argsIgnorePattern": "^_|^state" }]
+      "no-unused-vars": [
+        "error",
+        {
+          "argsIgnorePattern": "^_|^state"
+        }
+      ]
     }
   },
   "keywords": [
@@ -33,5 +39,8 @@
     "app",
     "dynamic",
     "serverless"
-  ]
+  ],
+  "devDependencies": {
+    "svg-symbols": "^1.0.5"
+  }
 }
