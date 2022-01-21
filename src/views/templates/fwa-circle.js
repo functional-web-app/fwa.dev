@@ -5,8 +5,6 @@ module.exports = function Circle () {
     inline-flex
     items-center
     justify-center
-    mr-6
-    mr-3
     circle-size
     text-5
     text1-lg

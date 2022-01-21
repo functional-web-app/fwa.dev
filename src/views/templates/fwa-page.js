@@ -36,19 +36,62 @@ module.exports = function HomePage (state = {}, html) {
     >
       Today's <fwa-heading-accent>web applications</fwa-heading-accent> are built either by
     </fwa-heading>
-    <ol
+    <div
       class="
         max-width-508-lg
+        grid
+        gap-2
+        gap1-lg
         mb-none-lg
-        list-none
+      "
+      style="
+        grid-template-columns: 2rem auto;
+        grid-row-gap: 1.7rem;
       "
     >
-      <fwa-list-item>
-        <fwa-circle>1</fwa-circle> load-balancing a fleet of servers
-      </fwa-list-item>
-      <fwa-list-item>
-        <fwa-circle>2</fwa-circle> <span>deploying static pages that call out to an assortment of third-party services</span></fwa-list-item>
-    </ol>
+      <fwa-circle
+        class="
+          flex
+          self-center
+          justify-end
+        "
+      >
+        1
+      </fwa-circle>
+      <div
+        class="
+          flex
+          self-center
+          justify-start
+          text-2
+          text2-lg
+          leading4
+        "
+      >
+        Load-balancing a fleet of servers
+      </div>
+      <fwa-circle
+        class="
+          flex
+          self-center
+          justify-end
+        "
+      >
+        2
+      </fwa-circle>
+      <div
+        class="
+          flex
+          self-center
+          justify-start
+          text-2
+          text2-lg
+          leading4
+        "
+      >
+        Deploying static pages that call out to an assortment of third-party services
+      </div>
+    </div>
   </div>
 </fwa-section-light>
 
@@ -253,7 +296,7 @@ module.exports = function HomePage (state = {}, html) {
 
   <div class="flex flex-col">
     <fwa-diagram-mobile class="hidden-lg"></fwa-diagram-mobile>
-    <fwa-diagram-desktop class="hidden block-lg"></fwa-diagram-mobile>
+    <fwa-diagram-desktop class="hidden block-lg"></fwa-diagram-desktop>
   </div>
 </fwa-section-gradient>
 
@@ -621,8 +664,10 @@ module.exports = function HomePage (state = {}, html) {
   <fwa-container-full>
     <div
       class="
+        pt12
+        pb12
         grid
-        gap5
+        gap17
         col-2
       "
     >
