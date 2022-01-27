@@ -40,19 +40,15 @@ module.exports = function HomePage (state = {}, html) {
       class="
         max-width-508-lg
         grid
+        grid-icon-list
         gap-2
         gap1-lg
         mb-none-lg
-      "
-      style="
-        grid-template-columns: 2rem auto;
-        grid-row-gap: 1.7rem;
       "
     >
       <fwa-circle
         class="
           flex
-          self-center
           justify-end
         "
       >
@@ -61,7 +57,6 @@ module.exports = function HomePage (state = {}, html) {
       <div
         class="
           flex
-          self-center
           justify-start
           text-2
           text2-lg
@@ -73,7 +68,6 @@ module.exports = function HomePage (state = {}, html) {
       <fwa-circle
         class="
           flex
-          self-center
           justify-end
         "
       >
@@ -82,7 +76,6 @@ module.exports = function HomePage (state = {}, html) {
       <div
         class="
           flex
-          self-center
           justify-start
           text-2
           text2-lg
@@ -101,7 +94,7 @@ module.exports = function HomePage (state = {}, html) {
       class="
         max-width-810-lg
         block
-        mb2
+        mb7
       "
     >
       The trade-offs <fwa-heading-accent>of these two approaches</fwa-heading-accent> are well known
@@ -118,7 +111,7 @@ module.exports = function HomePage (state = {}, html) {
         <h2
           class="
             mb0
-            text-1
+            text4
             font-semibold
           "
         >
@@ -142,7 +135,7 @@ module.exports = function HomePage (state = {}, html) {
         <h2
           class="
             mb0
-            text-1
+            text4
             font-semibold
           "
         >
@@ -196,11 +189,13 @@ module.exports = function HomePage (state = {}, html) {
     >
       <li
         class="
-          p1
+          grid
+          grid-col
+          p4
           bg-mid
         "
       >
-      <fwa-icon class="" href="cloud-functions"></fwa-icon>
+        <fwa-icon class="mb3" size="58-lg" href="cloud-functions"></fwa-icon>
         <h2
           class="
             mb-6
@@ -224,11 +219,13 @@ module.exports = function HomePage (state = {}, html) {
 
       <li
         class="
-          p1
+          grid
+          grid-col
+          p4
           bg-mid
         "
       >
-        <fwa-icon class="" href="managed-database"></fwa-icon>
+        <fwa-icon class="mb3" size="58-lg" href="managed-database"></fwa-icon>
         <h2
           class="
             mb-6
@@ -252,11 +249,13 @@ module.exports = function HomePage (state = {}, html) {
 
       <li
         class="
-          p1
+          grid
+          grid-col
+          p4
           bg-mid
         "
       >
-        <fwa-icon class="" href="deterministic-deployment"></fwa-icon>
+        <fwa-icon class="mb3" size="58-lg" href="deterministic-deployment"></fwa-icon>
         <h2
           class="
             mb-6
@@ -294,7 +293,14 @@ module.exports = function HomePage (state = {}, html) {
     </h2>
   </fwa-container-full>
 
-  <div class="flex flex-col">
+  <div
+    class="
+      flex
+      flex-col
+      max-width-full-lg
+      m-auto
+    "
+  >
     <fwa-diagram-mobile class="hidden-lg"></fwa-diagram-mobile>
     <fwa-diagram-desktop class="hidden block-lg"></fwa-diagram-desktop>
   </div>
@@ -343,36 +349,25 @@ module.exports = function HomePage (state = {}, html) {
         </p>
       </div>
 
-      <ul
+      <div
         class="
-          list-none
           grid
+          grid-icon-list
           gap3
         "
       >
-        <li
-          class="
-            bg-mid
-          "
-        >
-          <div
+        <fwa-icon class="mr-12" href="fundamentally-dynamic"></fwa-icon>
+        <div>
+          <h2
             class="
-              flex
-              items-center
+              mb-6
+              text-1
+              text1-lg
+              font-semibold
             "
           >
-            <fwa-icon class="mr-12" href="fundamentally-dynamic"></fwa-icon>
-            <h2
-              class="
-                mb-6
-                text-1
-                text1-lg
-                font-semibold
-              "
-            >
-              Fundamentally dynamic
-            </h2>
-          </div>
+            Fundamentally dynamic
+          </h2>
 
           <p
             class="
@@ -383,31 +378,20 @@ module.exports = function HomePage (state = {}, html) {
           >
             FWAs are fundamentally dynamic, yet also fully abstract cloud infrastructure, enabling developers to more directly invest their time in servicing customer needs.
           </p>
-        </li>
+        </div>
 
-        <li
-          class="
-            bg-mid
-          "
-        >
-          <div
+        <fwa-icon class="mr-12" href="inactive-and-inert"></fwa-icon>
+        <div>
+          <h2
             class="
-              flex
-              items-center
+              mb-6
+              text-1
+              text1-lg
+              font-semibold
             "
           >
-            <fwa-icon class="mr-12" href="inactive-and-inert"></fwa-icon>
-            <h2
-              class="
-                mb-6
-                text-1
-                text1-lg
-                font-semibold
-              "
-            >
-              Simple to debug
-            </h2>
-          </div>
+            Simple to debug
+          </h2>
 
           <p
             class="
@@ -418,31 +402,20 @@ module.exports = function HomePage (state = {}, html) {
           >
             FWA compute processes are inactive and inert by default. By statelessly activating upon invocation, FWAs are scalable, secure, and simple to debug.
           </p>
-        </li>
+        </div>
 
-        <li
-          class="
-            bg-mid
-          "
-        >
-          <div
+        <fwa-icon class="mr-12" href="easier-to-maintain"></fwa-icon>
+        <div>
+          <h2
             class="
-              flex
-              items-center
+              mb-6
+              text-1
+              text1-lg
+              font-semibold
             "
           >
-            <fwa-icon class="mr-12" href="easier-to-maintain"></fwa-icon>
-            <h2
-              class="
-                mb-6
-                text-1
-                text1-lg
-                font-semibold
-              "
-            >
-              Easier to maintain
-            </h2>
-          </div>
+            Easier to maintain
+          </h2>
           <p
             class="
               text-2
@@ -452,31 +425,20 @@ module.exports = function HomePage (state = {}, html) {
           >
             FWAs are inherently trivial to update, facilitating rapid change instead of laborious refactors. FWA deployment is measured in seconds, not minutes or hours.
           </p>
-        </li>
+        </div>
 
-        <li
-          class="
-            bg-mid
-          "
-        >
-          <div
+        <fwa-icon class="mr-12" href="reproducible"></fwa-icon>
+        <div>
+          <h2
             class="
-              flex
-              items-center
+              mb-6
+              text-1
+              text1-lg
+              font-semibold
             "
           >
-            <fwa-icon class="mr-12" href="reproducible"></fwa-icon>
-            <h2
-              class="
-                mb-6
-                text-1
-                text1-lg
-                font-semibold
-              "
-            >
-              Reproducible
-            </h2>
-          </div>
+            Reproducible
+          </h2>
           <p
             class="
               text-2
@@ -486,8 +448,8 @@ module.exports = function HomePage (state = {}, html) {
           >
             FWA infrastructure is explicitly defined and identically reproducible every time; this results in highly reliable delivery with low total cost of ownership, and faster issue resolution.
           </p>
-        </li>
-      </ul>
+        </div>
+      </div>
     </div>
   </fwa-container-full>
 </fwa-section-mid>
@@ -529,12 +491,14 @@ module.exports = function HomePage (state = {}, html) {
     >
       <li
         class="
-          p1
+          p4
           bg-mid
           col-span-2-lg
+          grid
+          grid-col
         "
       >
-        <fwa-icon class="" href="power-and-flexibility"></fwa-icon>
+        <fwa-icon class="mb1" href="power-and-flexibility"></fwa-icon>
         <h2
           class="
             mb-6
@@ -558,12 +522,14 @@ module.exports = function HomePage (state = {}, html) {
 
       <li
         class="
-          p1
+          p4
           bg-mid
           col-span-2-lg
+          grid
+          grid-col
         "
       >
-        <fwa-icon class="" href="code-runs-in-isolation"></fwa-icon>
+        <fwa-icon class="mb1" href="code-runs-in-isolation"></fwa-icon>
         <h2
           class="
             mb-6
@@ -587,12 +553,14 @@ module.exports = function HomePage (state = {}, html) {
 
       <li
         class="
-          p1
+          p4
           bg-mid
           col-span-2-lg
+          grid
+          grid-col
         "
       >
-        <fwa-icon class="" href="easier-to-develop"></fwa-icon>
+        <fwa-icon class="mb1" href="easier-to-develop"></fwa-icon>
         <h2
           class="
             mb-6
@@ -616,13 +584,15 @@ module.exports = function HomePage (state = {}, html) {
 
       <li
         class="
-          p1
-          bg-mid
+          p4
           col-span-2-lg
           col-start-2-lg
+          bg-mid
+          grid
+          grid-col
         "
       >
-        <fwa-icon class="" href="run-locally-and-offline"></fwa-icon>
+        <fwa-icon class="mb1" href="run-locally-and-offline"></fwa-icon>
         <h2
           class="
             mb-6
@@ -646,12 +616,14 @@ module.exports = function HomePage (state = {}, html) {
 
       <li
         class="
-          p1
+          p4
           bg-mid
           col-span-2-lg
+          grid
+          grid-col
         "
       >
-        <fwa-icon class="" href="specific-expertise"></fwa-icon>
+        <fwa-icon class="mb1" href="specific-expertise"></fwa-icon>
         <h2
           class="
             mb-6
@@ -787,12 +759,14 @@ module.exports = function HomePage (state = {}, html) {
 
         <a
           class="
-            block
+            flex
+            items-center
             font-semibold
             text0
           "
         >
-          Learn more
+          <div>Learn more</div>
+          <fwa-icon class="ml-1" size="30-lg" href="arrow-new-tab"></fwa-icon>
         </a>
       </div>
 
@@ -817,12 +791,14 @@ module.exports = function HomePage (state = {}, html) {
 
         <a
           class="
-            block
+            flex
+            items-center
             font-semibold
             text0
           "
         >
-          Learn more
+          <div>Learn more</div>
+          <fwa-icon class="ml-1" size="30-lg" href="arrow-new-tab"></fwa-icon>
         </a>
       </div>
     </div>

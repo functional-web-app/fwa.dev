@@ -23,7 +23,7 @@
     "@architect/eslint-config": "^2.0.1",
     "@architect/functions": "^4.1.1",
     "@enhance/ssr": "^1.1.1",
-    "eslint": "^8.6.0",
+    "eslint": "^8.7.0",
     "markdown-it": "^12.3.2",
     "markdown-it-footnote": "^3.0.3",
     "markdown-it-meta": "0.0.1"

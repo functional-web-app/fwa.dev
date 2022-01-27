@@ -65,10 +65,23 @@ module.exports = function Head (state = {}) {
       color: var(--accent-dark)
     }
 
+    .grid-icon-list {
+      grid-template-columns: 2rem auto;
+      grid-row-gap: 1.7rem;
+    }
+
     @media only screen and (min-width:48em) {
       .icon-lg {
         width: 2.777rem;
         height: 2.777rem;
+      }
+      .icon-30-lg {
+        width: 1.67rem;
+        height: 1.67rem;
+      }
+      .icon-58-lg {
+        width: 3.247rem;
+        height: 3.247rem;
       }
       .circle-size {
         width: 2rem;
