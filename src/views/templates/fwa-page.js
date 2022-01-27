@@ -361,7 +361,7 @@ module.exports = function HomePage (state = {}, html) {
               items-center
             "
           >
-            <fwa-icon class="mr-12" href="gears"></fwa-icon>
+            <fwa-icon class="mr-12" href="fundamentally-dynamic"></fwa-icon>
             <h2
               class="
                 mb-6
@@ -396,7 +396,7 @@ module.exports = function HomePage (state = {}, html) {
               items-center
             "
           >
-            <fwa-icon class="mr-12" href="check"></fwa-icon>
+            <fwa-icon class="mr-12" href="inactive-and-inert"></fwa-icon>
             <h2
               class="
                 mb-6
@@ -425,16 +425,24 @@ module.exports = function HomePage (state = {}, html) {
             bg-mid
           "
         >
-          <h2
+          <div
             class="
-              mb-6
-              text-1
-              text1-lg
-              font-semibold
+              flex
+              items-center
             "
           >
-            Easier to maintain
-          </h2>
+            <fwa-icon class="mr-12" href="easier-to-maintain"></fwa-icon>
+            <h2
+              class="
+                mb-6
+                text-1
+                text1-lg
+                font-semibold
+              "
+            >
+              Easier to maintain
+            </h2>
+          </div>
           <p
             class="
               text-2
@@ -451,16 +459,24 @@ module.exports = function HomePage (state = {}, html) {
             bg-mid
           "
         >
-          <h2
+          <div
             class="
-              mb-6
-              text-1
-              text1-lg
-              font-semibold
+              flex
+              items-center
             "
           >
-            Reproducible
-          </h2>
+            <fwa-icon class="mr-12" href="reproducible"></fwa-icon>
+            <h2
+              class="
+                mb-6
+                text-1
+                text1-lg
+                font-semibold
+              "
+            >
+              Reproducible
+            </h2>
+          </div>
           <p
             class="
               text-2
@@ -518,7 +534,7 @@ module.exports = function HomePage (state = {}, html) {
           col-span-2-lg
         "
       >
-        <fwa-icon class="" href="power"></fwa-icon>
+        <fwa-icon class="" href="power-and-flexibility"></fwa-icon>
         <h2
           class="
             mb-6
@@ -547,7 +563,7 @@ module.exports = function HomePage (state = {}, html) {
           col-span-2-lg
         "
       >
-        <fwa-icon class="" href="code-circle"></fwa-icon>
+        <fwa-icon class="" href="code-runs-in-isolation"></fwa-icon>
         <h2
           class="
             mb-6
@@ -576,7 +592,7 @@ module.exports = function HomePage (state = {}, html) {
           col-span-2-lg
         "
       >
-        <fwa-icon class="" href="data"></fwa-icon>
+        <fwa-icon class="" href="easier-to-develop"></fwa-icon>
         <h2
           class="
             mb-6
@@ -606,7 +622,7 @@ module.exports = function HomePage (state = {}, html) {
           col-start-2-lg
         "
       >
-        <fwa-icon class="" href="cloud-remove"></fwa-icon>
+        <fwa-icon class="" href="run-locally-and-offline"></fwa-icon>
         <h2
           class="
             mb-6
@@ -635,7 +651,7 @@ module.exports = function HomePage (state = {}, html) {
           col-span-2-lg
         "
       >
-        <fwa-icon class="" href="people"></fwa-icon>
+        <fwa-icon class="" href="specific-expertise"></fwa-icon>
         <h2
           class="
             mb-6
