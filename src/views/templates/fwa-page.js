@@ -1,20 +1,8 @@
 module.exports = function HomePage (state = {}, html) {
   return html`
-<fwa-header>
-  <fwa-container-full>
-    <h2
-      class="
-        text-light
-        font-black
-        text3
-      "
-    >
-      fwa.dev
-    </h2>
-  </fwa-container-full>
-</fwa-header>
+<fwa-header></fwa-header>
 
-<fwa-hero></fwa-hero>
+<fwa-hero /></fwa-hero>
 
 <fwa-section-light>
   <div
@@ -814,16 +802,7 @@ module.exports = function HomePage (state = {}, html) {
         col-2
       "
     >
-      <div>
-        <h1
-          class="
-            text7
-            font-black
-          "
-        >
-          fwa.dev
-        </h1>
-      </div>
+      <fwa-wordmark></fwa-wordmark>
 
       <div
         class="

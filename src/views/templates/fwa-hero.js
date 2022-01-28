@@ -3,11 +3,11 @@ module.exports = function Hero (state = {}, html) {
 <section
   class="
     pt13
-    pt17-lg
+    pt16-lg
     pr0
     pl0
     pb16
-    pb18-lg
+    pb17-lg
     text-light
     text-center
   "

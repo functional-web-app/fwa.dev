@@ -87,6 +87,9 @@ module.exports = function Head (state = {}) {
         width: 2rem;
         height: 2rem;
       }
+      .max-width-208-lg {
+        max-width: 11.556rem;
+      }
       .max-width-370-lg {
         max-width: 20.555rem;
       }
