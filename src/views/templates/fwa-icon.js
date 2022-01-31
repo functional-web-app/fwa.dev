@@ -1,11 +1,11 @@
 module.exports = function Icon (state = {}, html) {
-  const { href = '', size = false } = state
+  const { href = '', sizes = false } = state
   return html`
 <div
   class="
     icon
     icon-lg
-    ${size ? `icon-${size}` : ''}
+    ${sizes || ''}
   "
 >
   <svg>

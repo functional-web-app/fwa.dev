@@ -20,6 +20,10 @@ module.exports = function Head (state = {}) {
       width: 1.666rem;
       height: 1.666rem;
     }
+    .icon-41 {
+      width: 2.281rem;
+      height: 2.281rem;
+    }
     .font-custom {
       font-family: 'Poppins', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     }

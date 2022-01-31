@@ -6,7 +6,7 @@ module.exports = function Hero (state = {}, html) {
     pt16-lg
     pr0
     pl0
-    pb16
+    pb15
     pb17-lg
     text-light
     text-center
@@ -17,8 +17,10 @@ module.exports = function Hero (state = {}, html) {
       mb4
       mb8-lg
       font-semibold
-      text10
+      text7
       text16-lg
+      leading1
+      leading0-lg
       bg-clip-text
       bg-gradient
     "

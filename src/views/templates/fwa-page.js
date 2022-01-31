@@ -10,7 +10,8 @@ module.exports = function HomePage (state = {}, html) {
       max-width-full-lg
       m-auto
       grid
-      gap3
+      gap1
+      gap3-lg
       flow-col-lg
       items-center
     "
@@ -99,7 +100,8 @@ module.exports = function HomePage (state = {}, html) {
         <h2
           class="
             mb0
-            text4
+            text-1
+            text4-lg
             font-semibold
           "
         >
@@ -123,7 +125,8 @@ module.exports = function HomePage (state = {}, html) {
         <h2
           class="
             mb0
-            text4
+            text-1
+            text4-lg
             font-semibold
           "
         >
@@ -183,7 +186,7 @@ module.exports = function HomePage (state = {}, html) {
           bg-mid
         "
       >
-        <fwa-icon class="mb3" size="58-lg" href="cloud-functions"></fwa-icon>
+        <fwa-icon class="mb1 mb3-lg" sizes="icon-41 icon-58-lg" href="cloud-functions"></fwa-icon>
         <h2
           class="
             mb-6
@@ -213,7 +216,7 @@ module.exports = function HomePage (state = {}, html) {
           bg-mid
         "
       >
-        <fwa-icon class="mb3" size="58-lg" href="managed-database"></fwa-icon>
+        <fwa-icon class="mb1 mb3-lg" sizes="icon-41 icon-58-lg" href="managed-database"></fwa-icon>
         <h2
           class="
             mb-6
@@ -243,7 +246,7 @@ module.exports = function HomePage (state = {}, html) {
           bg-mid
         "
       >
-        <fwa-icon class="mb3" size="58-lg" href="deterministic-deployment"></fwa-icon>
+        <fwa-icon class="mb1 mb3-lg" sizes="icon-41 icon-58-lg" href="deterministic-deployment"></fwa-icon>
         <h2
           class="
             mb-6
@@ -640,11 +643,12 @@ module.exports = function HomePage (state = {}, html) {
   <fwa-container-full>
     <div
       class="
-        pt12
-        pb12
+        pt12-lg
+        pb12-lg
         grid
-        gap17
-        col-2
+        gap5
+        gap17-lg
+        col-2-lg
       "
     >
       <div>
@@ -713,7 +717,8 @@ module.exports = function HomePage (state = {}, html) {
       class="
         text2
         text10-lg
-        mb3
+        mb7
+        mb3-lg
       "
     >
       Additional <fwa-heading-accent>resources</fwa-heading-accent>
@@ -722,7 +727,8 @@ module.exports = function HomePage (state = {}, html) {
     <div
       class="
         grid
-        gap3
+        gap7
+        gap3-lg
         flow-col-lg
       "
     >
@@ -730,7 +736,9 @@ module.exports = function HomePage (state = {}, html) {
         <h3
           class="
             mb2
-            text4
+            text0
+            font-semibold
+            text4-lg
           "
         >
           Coniderations & trade-offs
@@ -739,6 +747,8 @@ module.exports = function HomePage (state = {}, html) {
         <p
           class="
             mb2
+            text-2
+            text1-lg
             leading4
           "
         >
@@ -754,7 +764,7 @@ module.exports = function HomePage (state = {}, html) {
           "
         >
           <div>Learn more</div>
-          <fwa-icon class="ml-1" size="30-lg" href="arrow-new-tab"></fwa-icon>
+          <fwa-icon class="ml-1" sizes="icon-30-lg" href="arrow-new-tab"></fwa-icon>
         </a>
       </div>
 
@@ -762,7 +772,9 @@ module.exports = function HomePage (state = {}, html) {
         <h3
           class="
             mb2
-            text4
+            text0
+            font-semibold
+            text4-lg
           "
         >
           2-tier, 3-tier, & FWA architectures
@@ -771,6 +783,8 @@ module.exports = function HomePage (state = {}, html) {
         <p
           class="
             mb2
+            text-2
+            text1-lg
             leading4
           "
         >
@@ -786,7 +800,7 @@ module.exports = function HomePage (state = {}, html) {
           "
         >
           <div>Learn more</div>
-          <fwa-icon class="ml-1" size="30-lg" href="arrow-new-tab"></fwa-icon>
+          <fwa-icon class="ml-1" sizes="icon-30-lg" href="arrow-new-tab"></fwa-icon>
         </a>
       </div>
     </div>
@@ -799,7 +813,7 @@ module.exports = function HomePage (state = {}, html) {
       class="
         grid
         gap3
-        col-2
+        col-2-lg
       "
     >
       <fwa-wordmark></fwa-wordmark>
