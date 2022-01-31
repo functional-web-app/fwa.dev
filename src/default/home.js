@@ -10,6 +10,10 @@ module.exports = async function handle (request) {
       ? path.split('/')[1]
       : languages[0]
 
+    // TODO: use an actual router for sub-pages
+    let page = 'page'
+    if (path.split('/')[1] === 'subpage') page = 'subpage'
+
     return {
       statusCode: 200,
       headers: {
@@ -17,7 +21,7 @@ module.exports = async function handle (request) {
       },
       body: html`
 ${top({ lang })}
-  <fwa-page></fwa-page>
+  <fwa-${page}/>
 ${bottom}
         `
     }
