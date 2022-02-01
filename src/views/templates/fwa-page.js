@@ -1,6 +1,6 @@
 module.exports = function HomePage (state = {}, html) {
   return html`
-<fwa-header></fwa-header>
+<fwa-nav></fwa-nav>
 
 <fwa-section-gradient>
   <fwa-container-full>

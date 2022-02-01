@@ -1,0 +1,70 @@
+module.exports = function Heading (state = {}, html) {
+  return html`
+<nav
+  class="
+    flex
+    items-center
+    justify-between
+    pt0
+    pb0
+    overflow-hidden
+  "
+>
+  <div
+    class="
+      flex
+      items-center
+      justify-between
+      w-full
+      pr1
+      pl1
+    "
+  >
+    <a
+      aria-label="FWA"
+      href="/"
+      class="
+        mr2
+        items-center
+        cursor-pointer
+      "
+    >
+      <fwa-wordmark></fwa-wordmark>
+    </a>
+
+    <span
+      class="
+        flex
+        justify-end
+        flex-grow
+        mb0
+        mb-none-lg
+      "
+    >
+      <fwa-nav-link href="/subpage">Subpage</fwa-nav-link>
+      <fwa-nav-link href="/subpage">Subpage 2</fwa-nav-link>
+    </span>
+  </div>
+
+  <div
+    class="
+      flex
+      items-center
+      justify-between
+      hidden-lg
+    "
+  >
+    <button
+      aria-label="Menu"
+      class="
+        pr1
+        text-light
+        cursor-pointer
+      "
+    >
+      H
+    </button>
+  </div>
+</nav>
+  `
+}

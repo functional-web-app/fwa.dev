@@ -1,6 +1,6 @@
 module.exports = function SubPage (state = {}, html) {
   return html`
-<fwa-header></fwa-header>
+<fwa-nav></fwa-nav>
 
 <fwa-hero /></fwa-hero>
 
