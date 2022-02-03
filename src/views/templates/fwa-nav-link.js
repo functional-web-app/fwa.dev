@@ -4,6 +4,7 @@ module.exports = function ListItem (state = {}, html) {
 <a
   href="${href}"
   class="
+    block
     pt-4
     pr-1
     pb-4
@@ -24,7 +25,6 @@ module.exports = function ListItem (state = {}, html) {
     no-underline
     bg-p10
     inline-block-lg
-    hidden
   "
 >
   <slot></slot>

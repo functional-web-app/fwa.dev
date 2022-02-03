@@ -74,6 +74,13 @@ module.exports = function Head (state = {}) {
       grid-row-gap: 1.7rem;
     }
 
+    .mobile-nav-open {
+      position: absolute;
+      top: 4.22rem;
+      left: 0;
+      right: 0;
+    }
+
     @media only screen and (min-width:48em) {
       .icon-lg {
         width: 2.777rem;
@@ -111,7 +118,6 @@ module.exports = function Head (state = {}) {
       }
     }
   </style>
-
 </head>
   `
 }
