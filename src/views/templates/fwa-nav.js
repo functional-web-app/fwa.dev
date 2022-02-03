@@ -1,6 +1,6 @@
 module.exports = function Heading (state = {}, html) {
   return html`
-<nav
+<header
   class="
     flex
     items-center
@@ -32,18 +32,21 @@ module.exports = function Heading (state = {}, html) {
       <fwa-wordmark></fwa-wordmark>
     </a>
 
-    <span
+    <nav
+      id="main-nav"
       class="
-        flex
-        justify-end
-        flex-grow
-        mb0
+        list-none
+        hidden
+        flex-lg
+        justify-end-lg
+        flex-grow-lg
         mb-none-lg
       "
     >
       <fwa-nav-link href="/subpage">Subpage</fwa-nav-link>
       <fwa-nav-link href="/subpage">Subpage 2</fwa-nav-link>
-    </span>
+      <fwa-nav-link href="/subpage">Subpage 3</fwa-nav-link>
+    </nav>
   </div>
 
   <div
@@ -56,6 +59,7 @@ module.exports = function Heading (state = {}, html) {
   >
     <button
       aria-label="Menu"
+      id="nav-toggle"
       class="
         pr1
         text-light
@@ -65,6 +69,6 @@ module.exports = function Heading (state = {}, html) {
       H
     </button>
   </div>
-</nav>
+</header>
   `
 }

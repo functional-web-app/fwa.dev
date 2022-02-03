@@ -17,10 +17,10 @@ module.exports = {
         font-custom
       "
     >
-
-    `
+  `
   },
   bottom: `
+    <script type="module" src="/_static/index.js"></script>
   </body>
 </html>
   `

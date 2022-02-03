@@ -2,7 +2,7 @@ module.exports = function SubPage (state = {}, html) {
   return html`
 <fwa-nav></fwa-nav>
 
-<fwa-hero /></fwa-hero>
+<fwa-hero></fwa-hero>
 
 <fwa-section-light>
   <div

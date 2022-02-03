@@ -16,12 +16,10 @@ module.exports = async function handle (request) {
 
     return {
       statusCode: 200,
-      headers: {
-        'content-type': 'text/html'
-      },
+      headers: { 'content-type': 'text/html' },
       body: html`
 ${top({ lang })}
-  <fwa-${page}/>
+  <fwa-${page}></fwa-${page}>
 ${bottom}
         `
     }

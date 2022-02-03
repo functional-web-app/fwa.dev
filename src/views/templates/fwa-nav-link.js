@@ -24,7 +24,6 @@ module.exports = function ListItem (state = {}, html) {
     no-underline
     bg-p10
     inline-block-lg
-    hidden
   "
 >
   <slot></slot>

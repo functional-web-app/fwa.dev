@@ -111,7 +111,6 @@ module.exports = function Head (state = {}) {
       }
     }
   </style>
-
 </head>
   `
 }
