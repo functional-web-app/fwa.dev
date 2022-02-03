@@ -9,7 +9,7 @@ module.exports = function SectionMid (state = {}, html) {
     pb12
     pb16-lg
     text-light
-    bg-dark
+    bg-primary
   "
 >
   <slot></slot>

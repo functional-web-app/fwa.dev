@@ -3,21 +3,18 @@ module.exports = function Heading (state = {}, html) {
 <header
   class="
     flex
-    items-center
     justify-between
+    bg-primary
     pt0
+    pr1
     pb0
-    overflow-hidden
+    pl1
   "
 >
   <div
     class="
       flex
-      items-center
-      justify-between
       w-full
-      pr1
-      pl1
     "
   >
     <a
@@ -25,7 +22,6 @@ module.exports = function Heading (state = {}, html) {
       href="/"
       class="
         mr2
-        items-center
         cursor-pointer
       "
     >
@@ -35,6 +31,7 @@ module.exports = function Heading (state = {}, html) {
     <nav
       id="main-nav"
       class="
+        bg-primary
         flex-lg
         justify-end-lg
         flex-grow-lg
@@ -48,26 +45,17 @@ module.exports = function Heading (state = {}, html) {
     </nav>
   </div>
 
-  <div
+  <button
+    aria-label="Menu"
+    id="nav-toggle"
     class="
-      flex
-      items-center
-      justify-between
       hidden-lg
+      text-light
+      cursor-pointer
     "
   >
-    <button
-      aria-label="Menu"
-      id="nav-toggle"
-      class="
-        pr1
-        text-light
-        cursor-pointer
-      "
-    >
-      <fwa-icon href="hamburger"></fwa-icon>
-    </button>
-  </div>
+    <fwa-icon href="hamburger"></fwa-icon>
+  </button>
 </header>
   `
 }

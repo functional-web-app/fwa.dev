@@ -4,6 +4,7 @@ module.exports = function ListItem (state = {}, html) {
 <a
   href="${href}"
   class="
+    block
     pt-4
     pr-1
     pb-4

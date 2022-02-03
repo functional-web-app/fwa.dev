@@ -5,13 +5,13 @@
 
   navToggle.addEventListener('click', () => {
     navUL.classList.toggle('hidden')
-    navUL.classList.toggle('flex')
+    navUL.classList.toggle('mobile-nav-open')
   })
 
   document.addEventListener('click', (e) => {
     if (!navUL.classList.contains('hidden') && !navToggle.contains(e.target)) {
       navUL.classList.add('hidden')
-      navUL.classList.remove('flex')
+      navUL.classList.remove('mobile-nav-open')
     }
   })
 })()
