@@ -35,12 +35,11 @@ module.exports = function Heading (state = {}, html) {
     <nav
       id="main-nav"
       class="
-        list-none
-        hidden
         flex-lg
         justify-end-lg
         flex-grow-lg
         mb-none-lg
+        hidden
       "
     >
       <fwa-nav-link href="/subpage">Subpage</fwa-nav-link>
@@ -66,7 +65,7 @@ module.exports = function Heading (state = {}, html) {
         cursor-pointer
       "
     >
-      H
+      <fwa-icon href="hamburger"></fwa-icon>
     </button>
   </div>
 </header>

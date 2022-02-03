@@ -2,6 +2,13 @@ module.exports = function Symbols () {
   return `
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="0" height="0"
   style="display:none;">
+  <symbol id="hamburger" viewBox="0 0 18 12">
+    <g fill="currentColor" fill-rule="evenodd">
+      <rect width="18" height="2" rx="1"></rect>
+      <rect width="18" height="2" y="5" rx="1"></rect>
+      <rect width="18" height="2" y="10" rx="1"></rect>
+    </g>
+  </symbol>
 
   <symbol id="arrow-new-tab" viewBox="0 0 30 30">
     <path fill="currentColor"
