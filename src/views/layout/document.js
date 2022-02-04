@@ -15,7 +15,7 @@ module.exports = function wrap (content) {
         font-custom
       "
     >
-    ${ content }
+    ${content}
     <script type="module" src="/_static/index.js"></script>
   </body>
 </html>
