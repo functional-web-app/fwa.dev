@@ -1,13 +1,11 @@
 const Head = require('./head.js')
 const Symbols = require('./symbols.js')
 
-module.exports = {
-  top: function (state) {
-    const { lang = 'en' } = state
-    return `
+module.exports = function wrap (content) {
+  return `
   <!DOCTYPE html>
   <html
-    lang="${lang}"
+    lang="en"
     class="bg-primary"
   >
     ${Head()}
@@ -17,9 +15,7 @@ module.exports = {
         font-custom
       "
     >
-  `
-  },
-  bottom: `
+    ${ content }
     <script type="module" src="/_static/index.js"></script>
   </body>
 </html>

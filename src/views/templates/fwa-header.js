@@ -11,7 +11,7 @@ module.exports = function Header (state = {}, html) {
     class="
       max-width-full-lg
       m-auto
-      gird
+      grid
     "
   >
     <fwa-wordmark></fwa-wordmark>

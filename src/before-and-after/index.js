@@ -10,7 +10,7 @@ exports.handler = async function fn () {
       headers: {
         'content-type': 'text/html'
       },
-      body: doc(html`<fwa-page></fwa-page>`)
+      body: doc(html`<fwa-page-before-after></fwa-page-before-after>`)
     }
   }
   catch (e) {
