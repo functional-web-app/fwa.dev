@@ -67,18 +67,9 @@ module.exports = function HomePage (state = {}, html) {
             mb3
           "
         >
-          Get <fwa-heading-accent>involved</fwa-heading-accent>
+          Something <fwa-heading-accent>missing?</fwa-heading-accent>
         </h2>
 
-        <p
-          class="
-            text-2
-            text1-lg
-            leading4
-          "
-        >
-          Any choice in application architecture has trade-offs and considerations
-        </p>
         <p
           class="
             mt2
@@ -87,7 +78,7 @@ module.exports = function HomePage (state = {}, html) {
             leading4
           "
         >
-          Learn more about the considerations & trade-offs to be taken into account when building a Functional Web App
+          Send a PR or share your thoughts on Twitter
         </p>
       </div>
 
@@ -100,20 +91,15 @@ module.exports = function HomePage (state = {}, html) {
         <fwa-link-button
           href="https://fwa.dev/examples"
         >
-          Try it out
+         Fork on Github 
         </fwa-link-button>
 
         <fwa-link-button
           href="https://discord.gg/jtb2CK5E"
         >
-          Join Discord
+          Twete it
         </fwa-link-button>
 
-        <fwa-link-button
-          href="https://fwa.dev/"
-        >
-          Join the mailing list
-        </fwa-link-button>
       </div>
     </div>
   </fwa-container-full>

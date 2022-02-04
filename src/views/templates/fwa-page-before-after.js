@@ -27,83 +27,14 @@ module.exports = function HomePage (state = {}, html) {
 
 
   <h2 class="mt3">FWA architecture</h2>
-  <p class="mt3 text-2 text1-lg leading4">A different way to solve this is to move up the cloud stack. A Functional Web App (FWA) is authored completely as cloud functions that can render HTML-first dynamically, incorporating the full-stack such as a managed database. The FWA moves presentation and application logic into the backend into cloud functions. These cloud functions talk to a managed database in the same network. The application is deployed declaratively with Infra-as-Code to guarantee the <em>entire app</em> is always completely reproducible to any version at any time. </p>
+  <p class="mt3 text-2 text1-lg leading4">A different way to solve this is to move up the cloud stack. A Functional Web App (FWA) is authored completely as cloud functions that can render HTML-first dynamically, incorporating the full-stack such as a managed database. The FWA moves presentation and application logic into the backend into cloud functions. These cloud functions talk to a managed database in the same network. The application is deployed declaratively with Infra-as-Code to guarantee the <em>entire app</em> is always completely reproducible to any version at any time. The logical architecture of an FWA is identical to the physical architecture eliminating many delivery and maintenance headaches. The code you write is the same as the code that is deployed.</p>
 
-    <p class="mt3 text-2 text1-lg leading4">In an FWA everything is behind a CDN. Static assets remain static. The biggest difference: application logic happens at runtime, not build time, in a trusted compute process so dynamic content can be rendered immediately. Browser client JavaScript is recommended to be progressively enhancing HTML-first behavior for the best web consumer experience. This is important for developers too; the logical architecture of an FWA is identical to the physical architecture eliminating many delivery and maintenance headaches.</p> 
+    <p class="mt3 text-2 text1-lg leading4">In an FWA everything is behind a CDN. Static assets remain static. The biggest difference: application logic happens at runtime, not build time, in a trusted compute process so dynamic content can be rendered immediately. Browser client JavaScript is recommended to be progressively enhancing HTML-first behavior for the best web consumer experience.</p> 
 
   </fwa-container-full>
 </fwa-section-light>
 
 <fwa-section-gradient>
-  <fwa-container-full>
-    <div
-      class="
-        pt12-lg
-        pb12-lg
-        grid
-        gap5
-        gap17-lg
-        col-2-lg
-      "
-    >
-      <div>
-        <h2
-          class="
-            text2
-            text10-lg
-            mb3
-          "
-        >
-          Get <fwa-heading-accent>involved</fwa-heading-accent>
-        </h2>
-
-        <p
-          class="
-            text-2
-            text1-lg
-            leading4
-          "
-        >
-          Any choice in application architecture has trade-offs and considerations
-        </p>
-        <p
-          class="
-            mt2
-            text-2
-            text1-lg
-            leading4
-          "
-        >
-          Learn more about the considerations & trade-offs to be taken into account when building a Functional Web App
-        </p>
-      </div>
-
-      <div
-        class="
-          grid
-          gap1
-        "
-      >
-        <fwa-link-button
-          href="https://fwa.dev/examples"
-        >
-          Try it out
-        </fwa-link-button>
-
-        <fwa-link-button
-          href="https://discord.gg/jtb2CK5E"
-        >
-          Join Discord
-        </fwa-link-button>
-
-        <fwa-link-button
-          href="https://fwa.dev/"
-        >
-          Join the mailing list
-        </fwa-link-button>
-      </div>
-    </div>
-  </fwa-container-full>
 </fwa-section-gradient>
 
 <fwa-footer></fwa-footer>

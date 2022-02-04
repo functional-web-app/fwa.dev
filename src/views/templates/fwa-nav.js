@@ -39,7 +39,7 @@ module.exports = function Heading (state = {}, html) {
         hidden
       "
     >
-      <fwa-nav-link href="/how-it-works">How it works</fwa-nav-link>
+      <fwa-nav-link href="/how-to-build">How to build</fwa-nav-link>
       <fwa-nav-link href="/before-and-after">Before &amp; after</fwa-nav-link>
       <fwa-nav-link href="/resources">Resources</fwa-nav-link>
     </nav>

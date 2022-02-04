@@ -2,14 +2,16 @@ module.exports = function HomePage (state = {}, html) {
   return html`
 <fwa-nav></fwa-nav>
 
+<fwa-section-gradient>
+  <fwa-container-full>
+    <fwa-heading class="max-width-650-lg block">How to build</fwa-heading>
+
+    <p class="mt3 text-2 text1-lg leading4">An FWA is composed of <strong>cloud functions</strong>, talking to a <strong>managed database</strong>, that are <strong>deterministically deployed</strong>.</p>
+  </fwa-container-full>
+</fwa-section-gradient>
+
 <fwa-section-light>
   <fwa-container-full>
-    <fwa-heading class="max-width-650-lg block">How it works</fwa-heading>
-
-    <p class="mt3 text-2 text1-lg leading4">Today's web applications are built either by load-balancing a fleet of servers, or deploying static pages that call out to an assortment of third-party services. Load-balanced server fleets require deep domain expertise, and are challenging and time-consuming to provision, maintain, and scale. Static-centric architectures (like SPAs and the JAMstack) move dynamic functionality behind loading screens, as customer web browsers are not a secure environment for backend business logic.</p>
-
-    <p class="mt3 text-2 text1-lg leading4">Functional Web App (FWA) is an architectural pattern for building web applications and APIs without these tradeoffs. It offers developers the flexibility of dynamic, full-stack applications paired with the ease of scaling a static website. An FWA is composed of <strong>cloud functions</strong>, talking to a <strong>managed database</strong>, that are <strong>deterministically deployed</strong>.</p>
-
     <fwa-heading class="mt4 max-width-650-lg block">Cloud functions</fwa-heading>
 
     <p class="mt3 text-2 text1-lg leading4">Dynamic web applications require a trusted compute process[1] to execute business logic, and cloud functions[2] are the purest unit of encapsulation for stateless, secure, auto-scaling trusted compute. Each time a Functional Web App endpoint is requested, or background task is invoked, a discretely isolated, single-responsibility cloud function spins up, providing safe, secure, trusted compute. Each process executes in a secure sandbox totally isolated from noisy (and nosy) concurrent neighbor processes. Because of their size, statelessness, and isolation, cloud functions have inherently high concurrency, enabling FWAs to achieve the horizontal scalability necessary to meet any level of demand without developer intervention.</p>

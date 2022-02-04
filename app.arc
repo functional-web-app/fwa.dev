@@ -6,8 +6,8 @@ fwa
   src src/robots
   method get
 
-/how-it-works
-  src src/how-it-works
+/how-to-build
+  src src/how-to-build
   method get
 
 /before-and-after
@@ -21,3 +21,11 @@ fwa
 /*
   src src/default
   method any
+
+/signup
+  src src/signup
+  method post
+
+@tables
+newsletter
+  email *String

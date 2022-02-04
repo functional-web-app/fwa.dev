@@ -337,7 +337,7 @@ module.exports = function HomePage (state = {}, html) {
             mb3
           "
         >
-          Get <fwa-heading-accent>involved</fwa-heading-accent>
+          Stay <fwa-heading-accent>in touch</fwa-heading-accent>
         </h2>
 
         <p
@@ -347,17 +347,7 @@ module.exports = function HomePage (state = {}, html) {
             leading4
           "
         >
-          Any choice in application architecture has trade-offs and considerations
-        </p>
-        <p
-          class="
-            mt2
-            text-2
-            text1-lg
-            leading4
-          "
-        >
-          Learn more about the considerations & trade-offs to be taken into account when building a Functional Web App
+          Learn more about building a Functional Web App. Sign up for a very rare, completely spam and advertising free, FWA links newsletter.
         </p>
       </div>
 
@@ -367,23 +357,10 @@ module.exports = function HomePage (state = {}, html) {
           gap1
         "
       >
-        <fwa-link-button
-          href="https://fwa.dev/examples"
-        >
-          Try it out
-        </fwa-link-button>
-
-        <fwa-link-button
-          href="https://discord.gg/jtb2CK5E"
-        >
-          Join Discord
-        </fwa-link-button>
-
-        <fwa-link-button
-          href="https://fwa.dev/"
-        >
-          Join the mailing list
-        </fwa-link-button>
+        <form action=/signup method=post>
+          <input type=email name=email required placeholder="Enter your email address">
+          <button>Sign up</button>
+        </form>
       </div>
     </div>
   </fwa-container-full>
