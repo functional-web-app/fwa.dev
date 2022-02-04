@@ -1,16 +1,14 @@
-// const arc = require('@architect/functions')
+const arc = require('@architect/functions')
 const html = require('@enhance/ssr')()
 const fail = require('@architect/views/errors/500')
 const doc = require('@architect/views/layout/document')
 
-exports.handler = async function fn () {
+exports.handler = arc.http.async(fn)
+
+async function fn () {
   try {
     return {
-      statusCode: 200,
-      headers: {
-        'content-type': 'text/html'
-      },
-      body: doc(html`<fwa-page-before-after></fwa-page-before-after>`)
+      html: doc(html`<fwa-page-before-after></fwa-page-before-after>`)
     }
   }
   catch (e) {
