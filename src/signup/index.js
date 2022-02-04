@@ -7,7 +7,7 @@ async function fn (req) {
   try {
     let email = req.body.email
     let data = await arc.tables()
-    let result = await data.newsletter.put({ 
+    let result = await data.newsletter.put({
       email,
       ts: new Date(Date.now()).toISOString()
     })
@@ -17,7 +17,7 @@ async function fn (req) {
     success = false
     console.log(e)
   }
-  return { 
-    location: `/?signup=${ success }` 
+  return {
+    location: `/?signup=${success}`
   }
 }
