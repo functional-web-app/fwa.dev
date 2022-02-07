@@ -352,11 +352,45 @@ module.exports = function HomePage (state = {}, html) {
         class="
           grid
           gap1
+          items-center-lg
+          justify-center-lg
         "
       >
-        <form action=/signup method=post>
-          <input type=email name=email required placeholder="Enter your email address">
-          <button>Sign up</button>
+        <form
+          action="/signup"
+          method="post"
+        >
+          <div
+            class="
+              flex
+            "
+          >
+            <input
+              type="email"
+              name="email"
+              required
+              placeholder="Enter your email address"
+              class="
+                mr-16
+              "
+            >
+            <button
+              class="
+                flex
+                justify-center
+                p0
+                text-light
+                border-current
+                border-solid
+                border2
+                border-hover-light
+                bg-hover-light
+                text-hover-accent-dark
+              "
+            >
+              Sign up
+            </button>
+          </div>
         </form>
       </div>
     </div>
