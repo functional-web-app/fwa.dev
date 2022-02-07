@@ -31,6 +31,10 @@ module.exports = function Head (state = {}) {
       width: 11.6111rem;
       height: 2.222rem;
     }
+    .input-group {
+      display: grid;
+      grid-template-columns: 2fr 1.3fr;
+    }
     .font-custom {
       font-family: 'Poppins', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     }

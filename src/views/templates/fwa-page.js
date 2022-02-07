@@ -351,7 +351,6 @@ module.exports = function HomePage (state = {}, html) {
       <div
         class="
           grid
-          gap1
           items-center-lg
           justify-center-lg
         "
@@ -359,38 +358,36 @@ module.exports = function HomePage (state = {}, html) {
         <form
           action="/signup"
           method="post"
+          class="
+            input-group
+            gap-16
+          "
         >
-          <div
+          <input
+            type="email"
+            name="email"
+            required
+            placeholder="Your email address"
             class="
-              flex
+              p0
+              w-full
+              text-dark
             "
           >
-            <input
-              type="email"
-              name="email"
-              required
-              placeholder="Enter your email address"
-              class="
-                mr-16
-              "
-            >
-            <button
-              class="
-                flex
-                justify-center
-                p0
-                text-light
-                border-current
-                border-solid
-                border2
-                border-hover-light
-                bg-hover-light
-                text-hover-accent-dark
-              "
-            >
-              Sign up
-            </button>
-          </div>
+          <button
+            class="
+              p0
+              text-light
+              text-hover-accent-dark
+              border2
+              border-current
+              border-solid
+              border-hover-light
+              bg-hover-light
+            "
+          >
+            Sign up
+          </button>
         </form>
       </div>
     </div>
