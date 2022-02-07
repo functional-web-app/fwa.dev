@@ -17,14 +17,6 @@ module.exports = function Heading (state = {}, html) {
       w-full
     "
   >
-    <a
-      aria-label="FWA"
-      href="/"
-      class="
-        mr2
-        cursor-pointer
-      "
-    >
       <fwa-wordmark></fwa-wordmark>
     </a>
 

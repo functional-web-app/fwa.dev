@@ -1,13 +1,18 @@
-module.exports = function Icon (state, html) {
+module.exports = function Wordmark (state, html) {
   return html`
-<svg
-  height="40"
+<a
+  aria-label="FWA"
+  href="/"
   class="
-    max-width-208-lg
+    inline-block
+    cursor-pointer
+    wordmark
     text-light
   "
 >
-  <use xlink:href="#wordmark"></use>
-</svg>
+  <svg>
+    <use xlink:href="#wordmark"></use>
+  </svg>
+</a>
   `
 }
