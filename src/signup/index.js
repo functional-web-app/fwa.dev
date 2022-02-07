@@ -1,17 +1,16 @@
 const arc = require('@architect/functions')
+const data = require('@begin/data')
 
 exports.handler = arc.http.async(fn)
 
 async function fn (req) {
   let success = true
   try {
-    let email = req.body.email
-    let data = await arc.tables()
-    let result = await data.newsletter.put({
-      email,
+    await data.set({
+      table: 'newsletter',
+      email: req.body.email,
       ts: new Date(Date.now()).toISOString()
     })
-    console.log(result)
   }
   catch (e) {
     success = false
