@@ -94,11 +94,8 @@ module.exports = function HomePage (state = {}, html) {
          Fork on Github 
         </fwa-link-button>
 
-        <fwa-link-button
-          href="https://discord.gg/jtb2CK5E"
-        >
-          Twete it
-        </fwa-link-button>
+        
+        <fwa-link-button href="https://twitter.com/intent/tweet?button_hashtag=FunctionalWebApp&ref_src=twsrc%5Etfw">Tweet about #FWA</fwa-link-button>
 
       </div>
     </div>
