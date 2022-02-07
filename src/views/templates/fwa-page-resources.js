@@ -6,23 +6,28 @@ module.exports = function HomePage (state = {}, html) {
   <fwa-container-full>
     <fwa-heading
       class="
-        max-width-650-lg
         block
+        max-width-650-lg
+        mb6
       "
     >
       Resources
     </fwa-heading>
 
-    <h3>Articles</h3>
-    <ul>
+    <fwa-sub-heading class="block mb1">
+      Articles
+    </fwa-sub-heading>
+    <ul class="mb4">
       <li><a href="https://www.bbc.co.uk/blogs/internet/entries/41db1cb0-8948-40a9-b2be-22c9494078f6">BBC</a></li>
       <li><a href="https://medium.com/lego-engineering/accelerating-with-serverless-625da076964b">Lego</a></li>
       <li><a href="https://siliconangle.com/2017/08/15/a-cloud-guru-uses-lambda-and-api-gateway-to-build-serverless-company-awssummit">A Cloud Guru</a></li>
       <li><a href="https://aws.amazon.com/solutions/case-studies/bustle">Bustle</a></li>
     </ul>
 
-    <h3>Vendors</h3>
-    <ul>
+    <fwa-sub-heading class="block mb1">
+      Vendors
+    </fwa-sub-heading>
+    <ul class="mb4">
       <li><a href="https://aws.amazon.com">AWS</a></li>
       <li><a href="https://azure.microsoft.com">Azure</a></li>
       <li><a href="https://begin.com">Begin</a></li>
@@ -34,8 +39,10 @@ module.exports = function HomePage (state = {}, html) {
       <li><a href="https://www.planetscale.com">PlanetscaleDB</a></li>
     </ul>
 
-    <h3>Open source</h3>
-    <ul>
+    <fwa-sub-heading class="block mb1">
+      Open source
+    </fwa-sub-heading>
+    <ul class="mb4">
       <li><a href="https://arc.codes">Architect</a></li>
       <li><a href="https://github.com/Azure/bicep">Bicep</a></li>
       <li><a href="https://aws.amazon.com/serverless/sam">SAM</a></li>
@@ -91,10 +98,10 @@ module.exports = function HomePage (state = {}, html) {
         <fwa-link-button
           href="https://fwa.dev/examples"
         >
-         Fork on Github 
+         Fork on Github
         </fwa-link-button>
 
-        
+
         <fwa-link-button href="https://twitter.com/intent/tweet?button_hashtag=FunctionalWebApp&ref_src=twsrc%5Etfw">Tweet about #FWA</fwa-link-button>
 
       </div>
