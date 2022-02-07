@@ -152,36 +152,6 @@ module.exports = function HomePage (state = {}, html) {
         col-6-lg
       "
     >
-      <li
-        class="
-          p4
-          bg-mid
-          col-span-2-lg
-          grid
-          grid-col
-        "
-      >
-        <fwa-icon class="mb1" href="power-and-flexibility"></fwa-icon>
-        <h2
-          class="
-            mb-6
-            text-1
-            text1-lg
-            font-semibold
-          "
-        >
-          Power and flexibility
-        </h2>
-        <p
-          class="
-            text-2
-            text-1-lg
-            leading4
-          "
-        >
-          FWAs combine the power and flexibility of dynamic, full-stack web applications with the ease and simplicity of scaling a static website.
-        </p>
-      </li>
 
       <li
         class="
@@ -192,7 +162,7 @@ module.exports = function HomePage (state = {}, html) {
           grid-col
         "
       >
-        <fwa-icon class="mb1" href="code-runs-in-isolation"></fwa-icon>
+        <fwa-icon class="mb1" href="specific-expertise"></fwa-icon>
         <h2
           class="
             mb-6
@@ -201,7 +171,7 @@ module.exports = function HomePage (state = {}, html) {
             font-semibold
           "
         >
-          Code runs in isolation
+          Anyone can build
         </h2>
         <p
           class="
@@ -210,7 +180,7 @@ module.exports = function HomePage (state = {}, html) {
             leading4
           "
         >
-          FWA code runs in isolation, ensuring unrelated code is never run in the same process, thereby reducing bug surface area and potential security issues.
+          FWAs do not require any specific domain expertise or specialization to build or manage. Anyone with a basic understanding of web development is capable of creating a fully-realized FWA.
         </p>
       </li>
 
@@ -249,7 +219,6 @@ module.exports = function HomePage (state = {}, html) {
         class="
           p4
           col-span-2-lg
-          col-start-2-lg
           bg-mid
           grid
           grid-col
@@ -282,11 +251,12 @@ module.exports = function HomePage (state = {}, html) {
           p4
           bg-mid
           col-span-2-lg
+          col-start-2-lg
           grid
           grid-col
         "
       >
-        <fwa-icon class="mb1" href="specific-expertise"></fwa-icon>
+        <fwa-icon class="mb1" href="code-runs-in-isolation"></fwa-icon>
         <h2
           class="
             mb-6
@@ -295,7 +265,7 @@ module.exports = function HomePage (state = {}, html) {
             font-semibold
           "
         >
-          Anyone can build
+          Code runs in isolation
         </h2>
         <p
           class="
@@ -304,9 +274,42 @@ module.exports = function HomePage (state = {}, html) {
             leading4
           "
         >
-          FWAs do not require any specific domain expertise or specialization to build or manage. Anyone with a basic understanding of web development is capable of creating a fully-realized FWA.
+          FWA code runs in isolation, ensuring unrelated code is never run in the same process, thereby reducing bug surface area and potential security issues.
         </p>
       </li>
+
+
+      <li
+        class="
+          p4
+          bg-mid
+          col-span-2-lg
+          grid
+          grid-col
+        "
+      >
+        <fwa-icon class="mb1" href="power-and-flexibility"></fwa-icon>
+        <h2
+          class="
+            mb-6
+            text-1
+            text1-lg
+            font-semibold
+          "
+        >
+          Power and flexibility
+        </h2>
+        <p
+          class="
+            text-2
+            text-1-lg
+            leading4
+          "
+        >
+          FWAs combine the power and flexibility of dynamic, full-stack web applications with the ease and simplicity of scaling a static website.
+        </p>
+      </li>
+
     </ul>
   </fwa-container-full>
 </fwa-section-light>
