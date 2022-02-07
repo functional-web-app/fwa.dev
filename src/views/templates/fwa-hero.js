@@ -34,7 +34,7 @@ module.exports = function Hero (state = {}, html) {
         leading3
       "
     >
-      Functional Web App ( FWA ) are an architectural pattern for building web applications and APIs. It empowers developers with the flexibility of dynamic, <fwa-heading-accent>full-stack applications</fwa-heading-accent> paired with the <fwa-heading-accent>ease of scaling</fwa-heading-accent> a static website.
+      Functional Web App (FWA) is an architectural pattern for building web applications and APIs. It empowers developers with the flexibility of dynamic, <fwa-heading-accent>full-stack applications</fwa-heading-accent> paired with the <fwa-heading-accent>ease of scaling</fwa-heading-accent> a static website.
     </p>
   </fwa-container-full>
 </section>
