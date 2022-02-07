@@ -8,7 +8,7 @@ async function fn (req) {
   try {
     await data.set({
       table: 'newsletter',
-      email: req.body.email,
+      key: req.body.email,
       ts: new Date(Date.now()).toISOString()
     })
   }
