@@ -13,7 +13,7 @@
     "serverless"
   ],
   "scripts": {
-    "start": "sandbox",
+    "start": "ARC_TABLES_PORT=5002 sandbox",
     "lint": "arc-hydrate && eslint . --fix",
     "test": "npm run lint"
   },

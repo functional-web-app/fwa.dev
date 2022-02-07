@@ -1,5 +1,6 @@
 module.exports = function Hero (state = {}, html) {
   return html`
+
 <section
   class="
     pt13
@@ -9,37 +10,33 @@ module.exports = function Hero (state = {}, html) {
     pb15
     pb17-lg
     text-light
-    text-center
   "
 >
-  <h1
-    class="
-      mb4
-      mb8-lg
-      font-semibold
-      text7
-      text16-lg
-      leading1
-      leading0-lg
-      bg-clip-text
-      bg-gradient
-    "
-  >
-    Functional </br>
-    Web Apps
-  </h1>
-  <p
-    class="
-      m-auto
-      max-width-275
-      max-width-575-lg
-      text-1
-      text2-lg
-      leading3
-    "
-  >
-    Functional Web Apps are the best way to build dynamic, full-stack, auto-scaling web applications and APIs.
-  </p>
+  <fwa-container-full>
+    <h1
+      class="
+        mb2
+        mb3-lg
+        font-semibold
+        text6
+        text12-lg
+        leading1
+        leading0-lg
+      "
+    >
+      Functional Web App
+    </h1>
+
+    <p
+      class="
+        text-1
+        text2-lg
+        leading3
+      "
+    >
+      Functional Web App ( FWA ) are an architectural pattern for building web applications and APIs. It empowers developers with the flexibility of dynamic, <fwa-heading-accent>full-stack applications</fwa-heading-accent> paired with the <fwa-heading-accent>ease of scaling</fwa-heading-accent> a static website.
+    </p>
+  </fwa-container-full>
 </section>
   `
 }

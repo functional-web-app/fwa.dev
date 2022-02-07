@@ -2,13 +2,7 @@ module.exports = function HomePage (state = {}, html) {
   return html`
 <fwa-nav></fwa-nav>
 
-<fwa-section-gradient>
-  <fwa-container-full>
-    <fwa-paragraph class="text1-lg">
-      <fwa-heading-accent>Functional Web Apps (FWA)</fwa-heading-accent> are an architectural pattern for building web applications and APIs. It empowers developers with the flexibility of dynamic, <fwa-heading-accent>full-stack applications</fwa-heading-accent> paired with the <fwa-heading-accent>ease of scaling</fwa-heading-accent> a static website.
-    </fwa-paragraph>
-  </fwa-container-full>
-</fwa-section-gradient>
+<fwa-hero></fwa-hero>
 
 <fwa-section-light>
   <fwa-container-full>
