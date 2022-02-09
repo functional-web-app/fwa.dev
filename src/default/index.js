@@ -8,6 +8,7 @@ exports.handler = arc.http.async(fn)
 async function fn (req) {
   try {
     return {
+      cacheControl: 'max-age=60',
       html: doc(html`<fwa-page success="${req.query && req.query.signup === 'true'}"></fwa-page>`)
     }
   }
