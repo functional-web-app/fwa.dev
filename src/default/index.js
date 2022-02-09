@@ -5,10 +5,10 @@ const doc = require('@architect/views/layout/document')
 
 exports.handler = arc.http.async(fn)
 
-async function fn () {
+async function fn (req) {
   try {
     return {
-      html: doc(html`<fwa-page></fwa-page>`)
+      html: doc(html`<fwa-page success="${ req.query?.signup === 'true' }"></fwa-page>`)
     }
   }
   catch (e) {

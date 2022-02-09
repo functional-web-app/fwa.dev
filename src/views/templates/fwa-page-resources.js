@@ -17,7 +17,7 @@ module.exports = function HomePage (state = {}, html) {
     <fwa-sub-heading class="block mb1">
       Articles
     </fwa-sub-heading>
-    <ul class="mb4 list-none">
+    <ul class="mb4 leading2 list-none">
       <li><a href="https://www.bbc.co.uk/blogs/internet/entries/41db1cb0-8948-40a9-b2be-22c9494078f6">BBC</a></li>
       <li><a href="https://medium.com/lego-engineering/accelerating-with-serverless-625da076964b">Lego</a></li>
       <li><a href="https://siliconangle.com/2017/08/15/a-cloud-guru-uses-lambda-and-api-gateway-to-build-serverless-company-awssummit">A Cloud Guru</a></li>
@@ -27,7 +27,7 @@ module.exports = function HomePage (state = {}, html) {
     <fwa-sub-heading class="block mb1">
       Vendors
     </fwa-sub-heading>
-    <ul class="mb4 list-none">
+    <ul class="mb4 leading2 list-none">
       <li><a href="https://aws.amazon.com">AWS</a></li>
       <li><a href="https://azure.microsoft.com">Azure</a></li>
       <li><a href="https://begin.com">Begin</a></li>
@@ -42,7 +42,7 @@ module.exports = function HomePage (state = {}, html) {
     <fwa-sub-heading class="block mb1">
       Open source
     </fwa-sub-heading>
-    <ul class="mb4 list-none">
+    <ul class="mb4 leading2 list-none">
       <li><a href="https://arc.codes">Architect</a></li>
       <li><a href="https://github.com/Azure/bicep">Bicep</a></li>
       <li><a href="https://aws.amazon.com/serverless/sam">SAM</a></li>

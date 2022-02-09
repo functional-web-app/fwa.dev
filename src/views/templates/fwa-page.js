@@ -1,7 +1,8 @@
 module.exports = function HomePage (state = {}, html) {
+  
   return html`
 <fwa-nav></fwa-nav>
-
+<fwa-flash success=${ !!state.success }></fwa-flash>
 <fwa-hero></fwa-hero>
 
 <fwa-section-light>
