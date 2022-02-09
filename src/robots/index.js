@@ -1,7 +1,7 @@
 const arc = require('@architect/functions')
 
 async function handler () {
-  let env = process.env.ARC_ENV
+  let env = process.env.NODE_ENV || process.env.ARC_ENV
 
   if (env === 'production') {
     return {
