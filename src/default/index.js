@@ -12,7 +12,7 @@ async function fn (req) {
     headers['Strict-Transport-Security'] = 'max-age=0'
     headers['X-Content-Type-Options'] = 'nosniff'
     headers['X-Frame-Options'] = 'DENY'
-    headers['Content-Security-Policy'] = "default-src 'self' google.com *.google.com"
+    headers['Content-Security-Policy'] = "default-src 'unsafe-inline' 'self' *.googleapis.com"
     headers['X-XSS-Protection'] = '1'
     headers['Cache-Control'] = 'max-age=60'
   }
