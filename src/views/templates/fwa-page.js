@@ -34,7 +34,8 @@ module.exports = function HomePage (state = {}, html) {
         "
       >
         <fwa-icon class="mb1 mb3-lg" sizes="icon-41 icon-58-lg" href="cloud-functions"></fwa-icon>
-        <h2
+        <a
+          href="/how-to-build#cloud-functions"
           class="
             mb-6
             text-1
@@ -43,7 +44,7 @@ module.exports = function HomePage (state = {}, html) {
           "
         >
           Cloud functions
-        </h2>
+        </a>
         <p
           class="
             text-2
@@ -64,7 +65,8 @@ module.exports = function HomePage (state = {}, html) {
         "
       >
         <fwa-icon class="mb1 mb3-lg" sizes="icon-41 icon-58-lg" href="managed-database"></fwa-icon>
-        <h2
+        <a
+          href="/how-to-build#managed-database"
           class="
             mb-6
             text-1
@@ -73,7 +75,7 @@ module.exports = function HomePage (state = {}, html) {
           "
         >
           Managed database
-        </h2>
+        </a>
         <p
           class="
             text-2
@@ -94,7 +96,8 @@ module.exports = function HomePage (state = {}, html) {
         "
       >
         <fwa-icon class="mb1 mb3-lg" sizes="icon-41 icon-58-lg" href="deterministic-deployment"></fwa-icon>
-        <h2
+        <a
+          href="/how-to-build#deterministic-deployment"
           class="
             mb-6
             text-1
@@ -103,7 +106,7 @@ module.exports = function HomePage (state = {}, html) {
           "
         >
           Deterministic deployment
-        </h2>
+        </a>
         <p
           class="
             text-2
