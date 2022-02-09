@@ -6,9 +6,19 @@ const doc = require('@architect/views/layout/document')
 exports.handler = arc.http.async(fn)
 
 async function fn (req) {
+  let headers = {}
+  let env = process.env.NODE_ENV || process.env.ARC_ENV
+  if (env && (env === 'staging' || env === 'production')) {
+    headers['Strict-Transport-Security'] = 'max-age=0'
+    headers['X-Content-Type-Options'] = 'nosniff'
+    headers['X-Frame-Options'] = 'DENY'
+    headers['Content-Security-Policy'] = "default-src 'self' google.com *.google.com"
+    headers['X-XSS-Protection'] = '1'
+    headers['Cache-Control'] = 'max-age=60'
+  }
   try {
     return {
-      cacheControl: 'max-age=60',
+      headers,
       html: doc(html`<fwa-page success="${req.query && req.query.signup === 'true'}"></fwa-page>`)
     }
   }
