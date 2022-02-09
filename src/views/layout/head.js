@@ -1,11 +1,11 @@
 const production = process.env.NODE_ENV === 'production'
 
 module.exports = function Head (state = {}) {
-  const { description = '', title = '' } = state
+  const { title = 'Functional Web App (FWA)' } = state
   return `
 <head>
   <title>${title}</title>
-  ${description}
+  <meta name="description" content="The Functional Web App (FWA) is an architectural pattern for building dynamic web applications and APIs.">
   <meta charset="UTF-8">
   <link href="data:image/x-icon;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQEAYAAABPYyMiAAAABmJLR0T///////8JWPfcAAAACXBIWXMAAABIAAAASABGyWs+AAAAF0lEQVRIx2NgGAWjYBSMglEwCkbBSAcACBAAAeaR9cIAAAAASUVORK5CYII=" rel="icon" type="image/x-icon">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
