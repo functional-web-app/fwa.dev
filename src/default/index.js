@@ -8,7 +8,7 @@ exports.handler = arc.http.async(fn)
 async function fn (req) {
   try {
     return {
-      html: doc(html`<fwa-page success="${ req.query?.signup === 'true' }"></fwa-page>`)
+      html: doc(html`<fwa-page success="${req.query?.signup === 'true'}"></fwa-page>`)
     }
   }
   catch (e) {

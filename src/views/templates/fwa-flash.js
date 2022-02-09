@@ -15,7 +15,7 @@ module.exports = function Flash (state = {}, html) {
     t0
     right0
     left0
-    ${ state.success? '' : 'hidden' }
+    ${state.success ? '' : 'hidden'}
     pt13
     pt16-lg
     pr0
