@@ -32,7 +32,16 @@ module.exports = function HomePage (state = {}, html) {
     <fwa-sub-heading class="block mb3">
       FWA architecture
     </fwa-sub-heading>
-    <p class="mt3 text-2 text1-lg leading4">A different way to solve all this manual complexity is to move up the cloud stack. A Functional Web App (FWA) is authored completely as single-responsibility cloud functions that can render HTML-first dynamically, incorporating the full-stack such as a managed database. The FWA moves presentation and application logic into the backend with pure cloud functions. These cloud functions talk to a managed database in the same network. The application is deterministically deployed with Infrastructure as Code to guarantee the <em>entire app</em> is always completely reproducible to any version at any time. The resulting logical architecture of an FWA is identical to the physical architecture eliminating many delivery and maintenance headaches. The code you write is the same as the code that is deployed achieving high availability with perfect 100% utilization.</p>
+    <p class="mt3 mb3 text-2 text1-lg leading4">A different way to solve all this complexity is to move up the cloud vendor stack. A Functional Web App (FWA) is authored completely as single-responsibility cloud functions that can render HTML-first dynamically, incorporating the full-stack such as a managed database. FWA presentation and application logic is modelled in the backend with pure cloud functions. These <em>cloud functions</em> talk to a <em>managed database</em> in the same network. The application is <em>deterministically deployed</em> with Infrastructure as Code to guarantee the <strong>entire app</strong> is always completely reproducible to any version at any time. The resulting logical architecture of an FWA is identical to the physical architecture eliminating many delivery and maintenance headaches. The code you write is the same as the code that is deployed; all while achieving high availability with perfect 100% utilization.</p>
+
+
+
+<fwa-sub-heading class="block mb3">
+      Caveat architecture
+    </fwa-sub-heading>
+    <p class="mt3 text-2 text1-lg leading4">Functional Web App is a new approach for building dynamic web applications without the same tradeoffs of the past. No architecture will be the silver bullet solution that is ideal for all situations. Completely managed cloud services generally have very well-known service limits, quotas, and tradeoffs, but expertise and practices are still relatively new. The first and most important decision is choosing the right cloud vendor(s) to build your application, and this decision will come with all sorts of human considerations.</p>
+<p class="mt3 text-2 text1-lg leading4">
+  As time progresses, new approaches will continually evolve alongside existing approaches. Three-tier MVC monoliths still comprise the vast majority of dynamic workloads today and, the JAMstack is an excellent approach for static content. Nevertheless, whether the system requirements call for static or dynamic functionality, an FWA is worth considering as it can likely solve both workloads with compelling performance, availability, maintenance, and security guarantees.</p>
 
   </fwa-container-full>
 </fwa-section-light>
