@@ -2,7 +2,7 @@ const Head = require('./head.js')
 const Symbols = require('./symbols.js')
 const GoogleAnalytics = require('./ga.js')
 
-module.exports = function wrap (content, scriptNonce) {
+module.exports = function wrap (content) {
   return `
   <!DOCTYPE html>
   <html
@@ -37,7 +37,7 @@ module.exports = function wrap (content, scriptNonce) {
 })()
 
     </script>
-    ${GoogleAnalytics(scriptNonce)}
+    ${GoogleAnalytics()}
   </body>
 </html>
   `
