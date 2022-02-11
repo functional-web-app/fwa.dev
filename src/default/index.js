@@ -12,7 +12,7 @@ async function fn (req) {
     headers['Strict-Transport-Security'] = 'max-age=0'
     headers['X-Content-Type-Options'] = 'nosniff'
     headers['X-Frame-Options'] = 'DENY'
-    headers['Content-Security-Policy'] = "default-src 'unsafe-inline' 'self' fonts.googleapis.com fonts.gstatic.com; img-src 'self' data:;"
+    headers['Content-Security-Policy'] = "default-src 'unsafe-inline' 'self' fonts.googleapis.com fonts.gstatic.com googletagmanager.com; img-src 'self' data:;"
     headers['X-XSS-Protection'] = '1'
     headers['Cache-Control'] = 'max-age=60'
   }
