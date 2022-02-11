@@ -9,11 +9,13 @@ async function fn (req) {
   let headers = {}
   let env = process.env.NODE_ENV || process.env.ARC_ENV
   if (env && (env === 'staging' || env === 'production')) {
+    // these are defaults
     headers['Strict-Transport-Security'] = 'max-age=0'
     headers['X-Content-Type-Options'] = 'nosniff'
     headers['X-Frame-Options'] = 'DENY'
-    headers['Content-Security-Policy'] = "default-src 'unsafe-inline' 'self' fonts.googleapis.com fonts.gstatic.com; img-src 'self' data:;"
     headers['X-XSS-Protection'] = '1'
+    // not these
+    headers['Content-Security-Policy'] = "default-src 'unsafe-inline' 'self' fonts.googleapis.com fonts.gstatic.com; img-src 'self' data:;"
     headers['Cache-Control'] = 'max-age=60'
   }
   try {
