@@ -1,5 +1,6 @@
 const Head = require('./head.js')
 const Symbols = require('./symbols.js')
+const GoogleAnalytics = require('./ga.js')
 
 module.exports = function wrap (content) {
   return `
@@ -36,6 +37,7 @@ module.exports = function wrap (content) {
 })()
 
     </script>
+    ${GoogleAnalytics()}
   </body>
 </html>
   `
