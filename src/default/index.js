@@ -15,7 +15,7 @@ async function fn (req) {
     headers['X-Frame-Options'] = 'DENY'
     headers['X-XSS-Protection'] = '1'
     // not these
-    headers['Content-Security-Policy'] = "default-src 'unsafe-inline' 'self' fonts.googleapis.com fonts.gstatic.com; img-src 'self' data:;"
+    headers['Content-Security-Policy'] = `default-src 'unsafe-inline' 'self' www.google-analytics.com; img-src 'self' data:; script-src 'unsafe-inline' www.googletagmanager.com`
     headers['Cache-Control'] = 'max-age=60'
   }
   try {
