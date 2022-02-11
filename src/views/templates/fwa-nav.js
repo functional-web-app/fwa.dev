@@ -49,5 +49,33 @@ module.exports = function Heading (state = {}, html) {
     <fwa-icon href="hamburger"></fwa-icon>
   </button>
 </header>
-  `
+
+<script type=module>
+class FwaNav extends HTMLElement {
+  constructor () {
+    super()
+    this.navToggle = document.getElementById('nav-toggle')
+    this.navUL = document.getElementById('main-nav')
+    this.toggleMenu = this.toggleMenu.bind(this)
+    this.handleClickOutsideMenu = this.handleClickOutsideMenu.bind(this)
+    this.navToggle.addEventListener('click', this.toggleMenu)
+    document.addEventListener('click', this.handleClickOutsideMenu)
+  }
+  disconnectedCallback () {
+    document.removeEventListener(this.handleClickOutsideMenu)
+  }
+  toggleMenu (e) {
+    this.navUL.classList.toggle('hidden')
+    this.navUL.classList.toggle('mobile-nav-open')
+  }
+  handleClickOutsideMenu (e) {
+    if (this.navUL.classList.contains('mobile-nav-open') && !this.navToggle.contains(e.target)) {
+      this.navUL.classList.remove('mobile-nav-open')
+      this.navUL.classList.add('hidden')
+    }
+  }
+}
+customElements.define('fwa-nav', FwaNav)
+</script>
+`
 }
