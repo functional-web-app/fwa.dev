@@ -14,7 +14,7 @@ async function fn (req) {
     headers['Strict-Transport-Security'] = 'max-age=0'
     headers['X-Content-Type-Options'] = 'nosniff'
     headers['X-Frame-Options'] = 'DENY'
-    headers['Content-Security-Policy'] = `default-src 'unsafe-inline' 'self' fonts.googleapis.com fonts.gstatic.com www.google-analytics.com; img-src 'self' data:; script-src 'nonce-${scriptNonce}' www.googletagmanager.com`
+    headers['Content-Security-Policy'] = `default-src 'unsafe-inline' 'self' fonts.googleapis.com fonts.gstatic.com www.google-analytics.com; img-src 'self' data:; script-src 'unsafe-inline' 'nonce-${scriptNonce}' www.googletagmanager.com`
     headers['X-XSS-Protection'] = '1'
     headers['Cache-Control'] = 'max-age=60'
   }
