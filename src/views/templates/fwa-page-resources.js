@@ -31,12 +31,14 @@ module.exports = function HomePage (state = {}, html) {
       <li><a href="https://aws.amazon.com">AWS</a></li>
       <li><a href="https://azure.microsoft.com">Azure</a></li>
       <li><a href="https://begin.com">Begin</a></li>
+      <li><a href="https://www.cloudflare.com">Cloudflare</a></li>
       <li><a href="https://deno.com/deploy">Deno Deploy</a></li>
       <li><a href="https://fastly.com">Fastly</a></li>
-      <li><a href="https://cloud.google.com/functions">GCP</a></li>
-      <li><a href="https://www.cloudflare.com">Cloudflare</a></li>
       <li><a href="https://fauna.com">FaunaDB</a></li>
+      <li><a href="https://cloud.google.com/functions">GCP</a></li>
+      <li><a href="https://www.mongodb.com/">MongoDB</a></li>
       <li><a href="https://www.planetscale.com">PlanetscaleDB</a></li>
+      <li><a href="https://redis.io/">Redis</a></li>
     </ul>
 
     <fwa-sub-heading class="block mb1">
