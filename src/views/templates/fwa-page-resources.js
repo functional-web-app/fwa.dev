@@ -45,11 +45,11 @@ module.exports = function HomePage (state = {}, html) {
       Open source
     </fwa-sub-heading>
     <ul class="mb4 leading2 list-none">
-      <li><a href="https://arc.codes">Architect</a></li>
-      <li><a href="https://github.com/Azure/bicep">Bicep</a></li>
-      <li><a href="https://aws.amazon.com/serverless/sam">SAM</a></li>
-      <li><a href="https://www.serverless.com/open-source">Serverless</a></li>
-      <li><a href="https://www.terraform.io">Terraform</a></li>
+      <li><a href="https://arc.codes">Architect</a> - Architect is a simple framework for building and delivering powerful Functional Web Apps (FWAs) on AWS</li>
+      <li><a href="https://github.com/Azure/bicep">Bicep</a> - Bicep is a Domain Specific Language (DSL) for deploying Azure resources declaratively.</li>
+      <li><a href="https://aws.amazon.com/serverless/sam">SAM</a> - The AWS Serverless Application Model (SAM) is an open-source framework for building serverless applications. It provides shorthand syntax to express functions, APIs, databases, and event source mappings.</li>
+      <li><a href="https://www.serverless.com/open-source">Serverless</a> - Zero-friction development tooling for auto-scaling apps on AWS Lambda.</li>
+      <li><a href="https://www.terraform.io">Terraform</a> - Terraform is an open-source infrastructure as code software tool that provides a consistent CLI workflow to manage hundreds of cloud services.</li>
     </ul>
 
   </fwa-container-full>
