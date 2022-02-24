@@ -17,6 +17,7 @@ module.exports = function HomePage (state = {}, html) {
     <fwa-sub-heading class="block mb1">
       Articles
     </fwa-sub-heading>
+    <p class="mb0">Here are some articles where companies discuss building applications using the Functional Web App (FWA) architecture pattern.</p>
     <ul class="mb4 leading2 list-none">
       <li class="pb-18"><a class="italic" href="https://www.bbc.co.uk/blogs/internet/entries/41db1cb0-8948-40a9-b2be-22c9494078f6">"Optimising serverless for BBC Online"</a> - BBC</li>
       <li class="pb-18"><a class="italic" href="https://medium.com/lego-engineering/accelerating-with-serverless-625da076964b">"Accelerating with Serverless!</a> - Lego</li>
@@ -27,6 +28,7 @@ module.exports = function HomePage (state = {}, html) {
     <fwa-sub-heading class="block mb1">
       Vendors
     </fwa-sub-heading>
+    <p class="mb0">These vendors provide one or more of the facets of FWAs.</p>
     <ul class="mb4 leading2 list-none">
       <li><a href="https://aws.amazon.com">AWS</a></li>
       <li><a href="https://azure.microsoft.com">Azure</a></li>
@@ -44,6 +46,7 @@ module.exports = function HomePage (state = {}, html) {
     <fwa-sub-heading class="block mb1">
       Open source
     </fwa-sub-heading>
+    <p class="mb0">These open source projects may also assist you in building FWAs.</p>
     <ul class="mb4 leading2 list-none">
       <li class="pb-18"><a class="font-semibold" href="https://arc.codes">Architect</a> - Architect is a simple framework for building and delivering powerful Functional Web Apps (FWAs) on AWS</li>
       <li class="pb-18"><a class="font-semibold" href="https://github.com/Azure/bicep">Bicep</a> - Bicep is a Domain Specific Language (DSL) for deploying Azure resources declaratively.</li>
