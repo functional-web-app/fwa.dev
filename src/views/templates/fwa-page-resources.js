@@ -18,10 +18,10 @@ module.exports = function HomePage (state = {}, html) {
       Articles
     </fwa-sub-heading>
     <ul class="mb4 leading2 list-none">
-      <li><a href="https://www.bbc.co.uk/blogs/internet/entries/41db1cb0-8948-40a9-b2be-22c9494078f6">Optimising serverless for BBC Online</a> - BBC</li>
-      <li><a href="https://medium.com/lego-engineering/accelerating-with-serverless-625da076964b">Accelerating with Serverless!</a> - Lego</li>
-      <li><a href="https://siliconangle.com/2017/08/15/a-cloud-guru-uses-lambda-and-api-gateway-to-build-serverless-company-awssummit">A Cloud Guru uses Lambda and API Gateway to build serverless company</a> - A Cloud Guru</li>
-      <li><a href="https://aws.amazon.com/solutions/case-studies/bustle">Bustle Case Study</a> - Bustle</li>
+      <li class="pb-18"><a class="italic" href="https://www.bbc.co.uk/blogs/internet/entries/41db1cb0-8948-40a9-b2be-22c9494078f6">"Optimising serverless for BBC Online"</a> - BBC</li>
+      <li class="pb-18"><a class="italic" href="https://medium.com/lego-engineering/accelerating-with-serverless-625da076964b">"Accelerating with Serverless!</a> - Lego</li>
+      <li class="pb-18"><a  class="italic"href="https://siliconangle.com/2017/08/15/a-cloud-guru-uses-lambda-and-api-gateway-to-build-serverless-company-awssummit">"A Cloud Guru uses Lambda and API Gateway to build serverless company"</a> - A Cloud Guru</li>
+      <li class="pb-18"><a class="italic" href="https://aws.amazon.com/solutions/case-studies/bustle">"Bustle Case Study"</a> - Bustle</li>
     </ul>
 
     <fwa-sub-heading class="block mb1">
@@ -45,11 +45,11 @@ module.exports = function HomePage (state = {}, html) {
       Open source
     </fwa-sub-heading>
     <ul class="mb4 leading2 list-none">
-      <li><a href="https://arc.codes">Architect</a> - Architect is a simple framework for building and delivering powerful Functional Web Apps (FWAs) on AWS</li>
-      <li><a href="https://github.com/Azure/bicep">Bicep</a> - Bicep is a Domain Specific Language (DSL) for deploying Azure resources declaratively.</li>
-      <li><a href="https://aws.amazon.com/serverless/sam">SAM</a> - The AWS Serverless Application Model (SAM) is an open-source framework for building serverless applications. It provides shorthand syntax to express functions, APIs, databases, and event source mappings.</li>
-      <li><a href="https://www.serverless.com/open-source">Serverless</a> - Zero-friction development tooling for auto-scaling apps on AWS Lambda.</li>
-      <li><a href="https://www.terraform.io">Terraform</a> - Terraform is an open-source infrastructure as code software tool that provides a consistent CLI workflow to manage hundreds of cloud services.</li>
+      <li class="pb-18"><a class="font-semibold" href="https://arc.codes">Architect</a> - Architect is a simple framework for building and delivering powerful Functional Web Apps (FWAs) on AWS</li>
+      <li class="pb-18"><a class="font-semibold" href="https://github.com/Azure/bicep">Bicep</a> - Bicep is a Domain Specific Language (DSL) for deploying Azure resources declaratively.</li>
+      <li class="pb-18"><a class="font-semibold" href="https://aws.amazon.com/serverless/sam">SAM</a> - The AWS Serverless Application Model (SAM) is an open-source framework for building serverless applications. It provides shorthand syntax to express functions, APIs, databases, and event source mappings.</li>
+      <li class="pb-18"><a class="font-semibold" href="https://www.serverless.com/open-source">Serverless</a> - Zero-friction development tooling for auto-scaling apps on AWS Lambda.</li>
+      <li class="pb-18"><a class="font-semibold" href="https://www.terraform.io">Terraform</a> - Terraform is an open-source infrastructure as code software tool that provides a consistent CLI workflow to manage hundreds of cloud services.</li>
     </ul>
 
   </fwa-container-full>
