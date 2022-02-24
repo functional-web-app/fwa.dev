@@ -18,10 +18,10 @@ module.exports = function HomePage (state = {}, html) {
       Articles
     </fwa-sub-heading>
     <ul class="mb4 leading2 list-none">
-      <li><a href="https://www.bbc.co.uk/blogs/internet/entries/41db1cb0-8948-40a9-b2be-22c9494078f6">BBC</a></li>
-      <li><a href="https://medium.com/lego-engineering/accelerating-with-serverless-625da076964b">Lego</a></li>
-      <li><a href="https://siliconangle.com/2017/08/15/a-cloud-guru-uses-lambda-and-api-gateway-to-build-serverless-company-awssummit">A Cloud Guru</a></li>
-      <li><a href="https://aws.amazon.com/solutions/case-studies/bustle">Bustle</a></li>
+      <li><a href="https://www.bbc.co.uk/blogs/internet/entries/41db1cb0-8948-40a9-b2be-22c9494078f6">Optimising serverless for BBC Online</a> - BBC</li>
+      <li><a href="https://medium.com/lego-engineering/accelerating-with-serverless-625da076964b">Accelerating with Serverless!</a> - Lego</li>
+      <li><a href="https://siliconangle.com/2017/08/15/a-cloud-guru-uses-lambda-and-api-gateway-to-build-serverless-company-awssummit">A Cloud Guru uses Lambda and API Gateway to build serverless company</a> - A Cloud Guru</li>
+      <li><a href="https://aws.amazon.com/solutions/case-studies/bustle">Bustle Case Study</a> - Bustle</li>
     </ul>
 
     <fwa-sub-heading class="block mb1">
